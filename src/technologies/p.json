@@ -3394,6 +3394,18 @@
     "implies": "Java",
     "website": "https://www.publiccms.com"
   },
+  "PubTech": {
+    "cats": [
+      67
+    ],
+    "description": "PubTech is a consent management platform helping brands and businesses collect, store and leverage their customer consents.",
+    "icon": "PubTech.png",
+    "scriptSrc": [
+      "cmp\\.pubtech\\.ai",
+      
+    ],
+    "website": "https://www.pubtech.ai/"
+  },
   "Pulse Secure": {
     "cats": [
       46
