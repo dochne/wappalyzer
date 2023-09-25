@@ -3404,8 +3404,7 @@
       "__pub_tech_cmp_config": ""
     },
     "scriptSrc": [
-      "cmp\\.pubtech\\.ai",
-      
+      "pubtech-cmp-v(.+?)(?:-esm)?\\.js;version:\\1"
     ],
     "website": "https://www.pubtech.ai/"
   },
