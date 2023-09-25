@@ -3400,6 +3400,9 @@
     ],
     "description": "PubTech is a consent management platform helping brands and businesses collect, store and leverage their customer consents.",
     "icon": "PubTech.png",
+    "js": {
+      "__pub_tech_cmp_config": ""
+    },
     "scriptSrc": [
       "cmp\\.pubtech\\.ai",
       
