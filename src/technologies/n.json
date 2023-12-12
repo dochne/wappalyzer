@@ -677,7 +677,7 @@
       "Next.js"
     ],
     "js": {
-      "next.AppDir": "true"
+      "next.appDir": "true"
     },
     "requires": "Next.js",
     "website": "https://nextjs.org/docs/app"
