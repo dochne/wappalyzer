@@ -667,6 +667,21 @@
     },
     "website": "https://nextjs.org"
   },
+  "Next.js App Router": {
+    "cats": [
+      12
+    ],
+    "description": "The Next.js App Router is a new paradigm for building applications using React's latest features.",
+    "icon": "Next.js.svg",
+    "implies": [
+      "Next.js"
+    ],
+    "js": {
+      "next.AppDir": "true"
+    },
+    "requires": "Next.js",
+    "website": "https://nextjs.org/docs/app"
+  },
   "NextAuth.js": {
     "cats": [
       69
