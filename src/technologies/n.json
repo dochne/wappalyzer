@@ -682,6 +682,39 @@
     "requires": "Next.js",
     "website": "https://nextjs.org/docs/app"
   },
+  "Next.js SSR": {
+    "cats": [
+      12
+    ],
+    "description": "Next.js Server-Side Rendering.",
+    "icon": "Next.js.svg",
+    "implies": [
+      "Next.js"
+    ],
+    "js": {
+      ".__NEXT_DATA__.gip": "true",
+      ".__NEXT_DATA__.gssp": "true"
+    },
+    "requires": "Next.js",
+    "website": "https://nextjs.org/docs/pages/building-your-application/rendering/server-side-rendering"
+  },
+  "Next.js SSG": {
+    "cats": [
+      12
+    ],
+    "description": "Next.js Statis Site Generation.",
+    "icon": "Next.js.svg",
+    "implies": [
+      "Next.js"
+    ],
+    "js": {
+      ".__NEXT_DATA__.gsp": "true",
+      ".__NEXT_DATA__.nextExport": "true",
+      ".__NEXT_DATA__.autoExport": "true"
+    },
+    "requires": "Next.js",
+    "website": "https://nextjs.org/docs/pages/building-your-application/rendering/static-site-generation"
+  },
   "NextAuth.js": {
     "cats": [
       69
