@@ -646,9 +646,7 @@
   "Next.js": {
     "cats": [
       12,
-      18,
-      22,
-      57
+      18
     ],
     "cpe": "cpe:2.3:a:zeit:next.js:*:*:*:*:*:*:*:*",
     "description": "Next.js is a React framework for developing single page Javascript applications.",
@@ -669,7 +667,9 @@
   },
   "Next.js App Router": {
     "cats": [
-      12
+      12,
+      22,
+      57
     ],
     "description": "The Next.js App Router is a new paradigm for building applications using React's latest features.",
     "icon": "Next.js.svg",
@@ -682,9 +682,9 @@
     "requires": "Next.js",
     "website": "https://nextjs.org/docs/app"
   },
-  "Next.js SSR": {
+  "Next.js Page Router SSR": {
     "cats": [
-      12
+      22
     ],
     "description": "Next.js Server-Side Rendering.",
     "icon": "Next.js.svg",
@@ -698,11 +698,11 @@
     "requires": "Next.js",
     "website": "https://nextjs.org/docs/pages/building-your-application/rendering/server-side-rendering"
   },
-  "Next.js SSG": {
+  "Next.js Page Router SSG": {
     "cats": [
-      12
+      57
     ],
-    "description": "Next.js Statis Site Generation.",
+    "description": "Next.js Static Site Generation.",
     "icon": "Next.js.svg",
     "implies": [
       "Next.js"
