@@ -668,8 +668,7 @@
   "Next.js App Router": {
     "cats": [
       12,
-      22,
-      57
+      22
     ],
     "description": "The Next.js App Router is a new paradigm for building applications using React's latest features.",
     "icon": "Next.js.svg",
