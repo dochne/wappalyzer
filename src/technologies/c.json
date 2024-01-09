@@ -2947,7 +2947,26 @@
     "scriptSrc": "//give\\.communityfunded\\.com/",
     "website": "https://www.communityfunded.com"
   },
-  "Complianz": {
+  "Complianz GDPR": {
+    "cats": [
+      74,
+      67,
+      87
+    ],
+    "description": "Complianz is a GDPR/CCPA Cookie Consent plugin that supports GDPR, DSGVO, CCPA and PIPEDA with a conditional Cookie Notice and customized Cookie Policy based on the results of the built-in Cookie Scan.",
+    "icon": "Complianz.png",
+    "js": {
+      "complianz.version": "([\\d.]+)\\;version:\\1"
+    },
+    "pricing": [
+      "free"
+    ],
+    "requires": "WordPress",
+    "saas": true,
+    "scriptSrc": "wp-content/plugins/complianz-gdpr",
+    "website": "https://complianz.io"
+  },
+  "Complianz GDPR Premium": {
     "cats": [
       74,
       67,
@@ -2963,7 +2982,7 @@
     ],
     "requires": "WordPress",
     "saas": true,
-    "scriptSrc": "wp-content/plugins/complianz-gdpr",
+    "scriptSrc": "wp-content/plugins/complianz-gdpr-premium",
     "website": "https://complianz.io"
   },
   "Concrete CMS": {
