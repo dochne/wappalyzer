@@ -838,6 +838,17 @@
     "scriptSrc": "klaviyo\\.com",
     "website": "https://www.klaviyo.com/"
   },
+  "Klaviyo Reviews": {
+    "cats": [
+      90
+    ],
+    "description": "Klaviyo is an email marketing platform for online businesses.",
+    "icon": "Klaviyo.svg",
+    "js": {
+      "klaviyoModulesObject.loadedModules": "reviews"
+    },
+    "website": "https://www.klaviyo.com/product-reviews"
+  },
   "Klevu": {
     "cats": [
       29
