@@ -1537,23 +1537,25 @@
     "scripts": "aem-(?:GridColumn|apps/)",
     "website": "https://www.adobe.com/marketing/experience-manager.html"
   },
-  "Adobe Experience Manager Edge Delivery services preview": {
+  "Adobe Experience Manager with Edge Delivery Services preview": {
     "cats": [
       1
     ],
     "cpe": "cpe:2.3:a:adobe:experience_manager:*:*:*:*:*:*:*:*",
-    "description": "Edge Delivery Services in Adobe Experience Manager Sites as a Cloud Service with document-based authoring (Preview)",
+    "description": "Edge Delivery Services in Adobe Experience Manager Sites as a Cloud Service (Preview)",
     "icon": "Adobe Experience Platform.svg",
+    "saas": "true",
     "url": "https.+\\.(aem|hlx)\\.(page|live)",
     "website": "https://www.aem.live"
   },
-  "Adobe Experience Manager Edge Delivery services": {
+  "Adobe Experience Manager Edge Delivery Services": {
     "cats": [
       1
     ],
     "cpe": "cpe:2.3:a:adobe:experience_manager:*:*:*:*:*:*:*:*",
-    "description": "Edge Delivery services is a composable set of services that allows for a high degree of flexibility in how you author content on your website. As mentioned previously,you can use both AEM content management with Universal Editor authoring as well as document-based authoring.",
+    "description": "Edge Delivery Services in Adobe Experience Manager Sites as a Cloud Service, also know as Helix, Franklin, Next-Generation Composability is a fast and lightweight content management system from Adobe.",
     "icon": "Adobe Experience Platform.svg",
+    "saas": "true",
     "excludes": [
       "Adobe Experience Manager",
       "Adobe Experience Manager Edge Delivery services preview"
