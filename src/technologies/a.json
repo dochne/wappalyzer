@@ -1558,7 +1558,7 @@
     "saas": "true",
     "excludes": [
       "Adobe Experience Manager",
-      "Adobe Experience Manager Edge Delivery services preview"
+      "Adobe Experience Manager Edge Delivery Services preview"
     ],
     "scriptSrc": [
       "^.+/scripts/lib-franklin\\.js$",
