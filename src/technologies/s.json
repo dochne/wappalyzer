@@ -2310,9 +2310,9 @@
     "js": {
       "ShopifyPay.apiHost": ""
     },
-    "requires": "Shopify",
     "scriptSrc": [
-      "cdn\\.shopify\\.com/shopifycloud/shopify_pay/"
+      "cdn\\.shopify\\.com/shopifycloud/shopify_pay/",
+      "cdn\\.shopify\\.com/shopifycloud/shopify-js/shop-pay-payment-request\\.js"
     ],
     "website": "https://shop.app"
   },
@@ -2327,7 +2327,6 @@
       "Affirm",
       "Shop Pay"
     ],
-    "requires": "Shopify",
     "website": "https://shoppay.affirm.com"
   },
   "ShopBase": {
