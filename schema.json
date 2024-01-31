@@ -8,6 +8,7 @@
   },
   "type": "object",
   "additionalProperties": {
+    "type": "object",
     "additionalProperties": false,
     "required": ["cats","website"],
     "properties": {
