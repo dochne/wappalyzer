@@ -3379,20 +3379,6 @@
     "oss": true,
     "website": "https://github.com/mroderick/PubSubJS"
   },
-  "PubTech": {
-    "cats": [
-      67
-    ],
-    "description": "PubTech is a consent management platform helping brands and businesses collect, store and leverage their customer consents.",
-    "icon": "PubTech.png",
-    "js": {
-      "__pub_tech_cmp_config": ""
-    },
-    "scriptSrc": [
-      "pubtech-cmp-v(.+?)(?:-esm)?\\.js;version:\\1"
-    ],
-    "website": "https://www.pubtech.ai/"
-  },
   "Public CMS": {
     "cats": [
       1
@@ -3406,6 +3392,20 @@
     "icon": "Public CMS.png",
     "implies": "Java",
     "website": "https://www.publiccms.com"
+  },
+  "PubTech": {
+    "cats": [
+      67
+    ],
+    "description": "PubTech is a consent management platform helping brands and businesses collect, store and leverage their customer consents.",
+    "icon": "PubTech.png",
+    "js": {
+      "__pub_tech_cmp_config": ""
+    },
+    "scriptSrc": [
+      "pubtech-cmp-v(.+?)(?:-esm)?\\.js;version:\\1"
+    ],
+    "website": "https://www.pubtech.ai/"
   },
   "Pulse Secure": {
     "cats": [

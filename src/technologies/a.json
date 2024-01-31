@@ -1543,8 +1543,8 @@
     ],
     "cpe": "cpe:2.3:a:adobe:experience_manager:*:*:*:*:*:*:*:*",
     "description": "Adobe Experience Manager Franklin, also known as Project Helix or Composability, is a new way to publish AEM pages using Google Drive or Microsoft Office via Sharepoint. Instead of components, Franklin uses blocks to build pages. Blocks are pieces of a document that will be transformed into web page content.",
-    "excludes": "Adobe Experience Manager",
     "icon": "Adobe Experience Manager Franklin.svg",
+    "excludes": "Adobe Experience Manager",
     "scriptSrc": "^.+/scripts/lib-franklin\\.js$",
     "website": "https://www.hlx.live"
   },
@@ -4213,6 +4213,7 @@
     ],
     "description": "Assertive Yield is a SaaS company that specialises in helping SSPs (Supply-Side Platforms), publishers, and ad networks optimise their advertising revenue through real-time attribution and yield optimisation strategies.",
     "icon": "Assertive Yield.svg",
+    "saas": true,
     "js": {
       "assertive.predict": ""
     },
@@ -4220,7 +4221,6 @@
       "payg",
       "poa"
     ],
-    "saas": true,
     "website": "https://www.assertiveyield.com"
   },
   "Astra": {
@@ -4671,8 +4671,8 @@
       87
     ],
     "description": "Automatic.css is a CSS framework for WordPress page builders.",
-    "dom": "link[href*='/wp-content/uploads/automatic-css/']",
     "icon": "Automatic.css.png",
+    "dom": "link[href*='/wp-content/uploads/automatic-css/']",
     "pricing": [
       "low",
       "recurring"
