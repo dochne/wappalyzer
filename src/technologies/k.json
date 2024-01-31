@@ -649,7 +649,7 @@
     "cookies": {
       "_kicksite_session": ""
     },
-    "dom":"iframe[src*='.kicksite.net/']",
+    "dom": "iframe[src*='.kicksite.net/']",
     "pricing": [
       "mid",
       "recurring"

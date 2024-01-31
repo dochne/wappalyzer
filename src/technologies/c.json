@@ -2959,29 +2959,13 @@
       "complianz.version": "([\\d.]+)\\;version:\\1"
     },
     "pricing": [
-      "freemium", "recurring"
+      "freemium",
+      "recurring"
     ],
     "requires": "WordPress",
     "saas": true,
     "scriptSrc": "wp-content/plugins/complianz-gdpr",
     "website": "https://complianz.io"
-  },
-  "Burst": {
-    "cats": [
-      10
-    ],
-    "description": "Burst Statistics keeps all data on your server, making it fully compliant with privacy laws. Our dashboards offer clear and concise insights, allowing you to make informed decisions without feeling overwhelmed by abundant data. Choose Burst Statistics for seamless and reliable analytics trusted by over 100,000 users.",
-    "icon": "Burst.svg",
-    "js": {
-      "burst.url": ""
-    },
-    "pricing": [
-      "recurring"
-    ],
-    "requires": "WordPress",
-    "saas": true,
-    "scriptSrc": "assets/js/build/burst",
-    "website": "https://burst-statistics.com"
   },
   "Concrete CMS": {
     "cats": [

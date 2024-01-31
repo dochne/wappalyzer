@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@prantlf/jsonlint": "^10.2.0",
+    "@prantlf/jsonlint": "^14.0.3",
     "adm-zip": "^0.4.16",
     "convert-svg-to-png": "^0.5.0"
   },
@@ -17,9 +17,9 @@
     "terminal-overwrite": "^2.0.1"
   },
   "scripts": {
-    "lint": "eslint src/**/*.{js,json}",
-    "lint:fix": "eslint --fix src/**/*.{js,json}",
-    "validate": "yarn run lint && jsonlint -qV ./schema.json ./src/technologies/ && node ./bin/validate.js",
+    "lint": "eslint src/**/*.{js,json} && jsonlint -jV ./schema.json ./src/technologies/",
+    "lint:fix": "eslint --fix src/**/*.{js,json} && jsonlint -iV ./schema.json ./src/technologies/",
+    "validate": "yarn run lint && node ./bin/validate.js",
     "convert": "node --no-warnings ./bin/convert.js",
     "prettify": "jsonlint -si --trim-trailing-commas --enforce-double-quotes ./src/categories.json ./src/technologies/*.json",
     "build": "yarn run validate && yarn run prettify && yarn run convert && node ./bin/build.js",
