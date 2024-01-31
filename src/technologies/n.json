@@ -681,23 +681,6 @@
     "requires": "Next.js",
     "website": "https://nextjs.org/docs/app"
   },
-  "Next.js Page Router SSG": {
-    "cats": [
-      57
-    ],
-    "description": "Next.js Static Site Generation.",
-    "icon": "Next.js.svg",
-    "implies": [
-      "Next.js"
-    ],
-    "js": {
-      ".__NEXT_DATA__.autoExport": "true",
-      ".__NEXT_DATA__.gsp": "true",
-      ".__NEXT_DATA__.nextExport": "true"
-    },
-    "requires": "Next.js",
-    "website": "https://nextjs.org/docs/pages/building-your-application/rendering/static-site-generation"
-  },
   "Next.js Page Router SSR": {
     "cats": [
       22
@@ -713,6 +696,23 @@
     },
     "requires": "Next.js",
     "website": "https://nextjs.org/docs/pages/building-your-application/rendering/server-side-rendering"
+  },
+  "Next.js Page Router SSG": {
+    "cats": [
+      57
+    ],
+    "description": "Next.js Static Site Generation.",
+    "icon": "Next.js.svg",
+    "implies": [
+      "Next.js"
+    ],
+    "js": {
+      ".__NEXT_DATA__.gsp": "true",
+      ".__NEXT_DATA__.nextExport": "true",
+      ".__NEXT_DATA__.autoExport": "true"
+    },
+    "requires": "Next.js",
+    "website": "https://nextjs.org/docs/pages/building-your-application/rendering/static-site-generation"
   },
   "NextAuth.js": {
     "cats": [

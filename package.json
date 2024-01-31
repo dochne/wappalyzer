@@ -17,10 +17,11 @@
     "terminal-overwrite": "^2.0.1"
   },
   "scripts": {
-    "lint": "eslint src/**/*.{js,json} && jsonlint -jsV ./schema.json --trim-trailing-commas --enforce-double-quotes ./src/technologies/ && jsonlint -js --trim-trailing-commas --enforce-double-quotes ./src/categories.json",
-    "lint:fix": "eslint --fix src/**/*.{js,json} && jsonlint -isV ./schema.json --trim-trailing-commas --enforce-double-quotes ./src/technologies/ && jsonlint -is --trim-trailing-commas --enforce-double-quotes ./src/categories.json",
+    "lint": "eslint src/**/*.{js,json} && jsonlint -jV ./schema.json ./src/technologies/",
+    "lint:fix": "eslint --fix src/**/*.{js,json} && jsonlint -iV ./schema.json ./src/technologies/",
     "validate": "yarn run lint && node ./bin/validate.js",
     "convert": "node --no-warnings ./bin/convert.js",
+    "prettify": "jsonlint -si --trim-trailing-commas --enforce-double-quotes ./src/categories.json ./src/technologies/*.json",
     "build": "yarn run validate && yarn run prettify && yarn run convert && node ./bin/build.js",
     "build:safari": "xcrun safari-web-extension-converter --swift --project-location build --force src",
     "manifest": "node ./bin/manifest.js"

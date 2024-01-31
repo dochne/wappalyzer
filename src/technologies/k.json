@@ -644,12 +644,12 @@
     "cats": [
       53
     ],
+    "description": "Kicksite is a gym and martial arts member management software with attendance tracking, automated billing, free texting, lead capture forms and more.",
+    "icon": "Kicksite.png",
     "cookies": {
       "_kicksite_session": ""
     },
-    "description": "Kicksite is a gym and martial arts member management software with attendance tracking, automated billing, free texting, lead capture forms and more.",
     "dom": "iframe[src*='.kicksite.net/']",
-    "icon": "Kicksite.png",
     "pricing": [
       "mid",
       "recurring"
