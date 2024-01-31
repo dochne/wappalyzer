@@ -2959,7 +2959,7 @@
       "complianz.version": "([\\d.]+)\\;version:\\1"
     },
     "pricing": [
-      "recurring"
+     "freemium", "recurring"
     ],
     "requires": "WordPress",
     "saas": true,
