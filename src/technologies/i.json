@@ -1208,6 +1208,18 @@
     ],
     "website": "https://isotope.metafizzy.co"
   },
+  "Isso": {
+    "cats": [
+      15
+    ],
+    "description": "Isso is a lightweight commenting server written in Python and JavaScript, referred to as \"Ich schrei sonst\" in German.",
+    "implies": "Python",
+    "js": {
+      "Isso.fetchComments": ""
+    },
+    "oss": true,
+    "website": "https://github.com/posativ/isso/"
+  },
   "Issuu": {
     "cats": [
       19,
@@ -1228,18 +1240,6 @@
     "saas": true,
     "scriptSrc": "\\.issuu\\.com/",
     "website": "https://issuu.com"
-  },
-  "Isso": {
-    "cats": [
-      15
-    ],
-    "description": "Isso is a lightweight commenting server written in Python and JavaScript, referred to as \"Ich schrei sonst\" in German.",
-    "js": {
-      "Isso.fetchComments": ""
-    },
-    "implies": "Python",
-    "oss": true,
-    "website": "https://github.com/posativ/isso/"
   },
   "Iterable": {
     "cats": [
