@@ -52,6 +52,24 @@
     },
     "website": "https://github.com/ruby/rdoc"
   },
+  "Really Simple SSL & Security": {
+    "cats": [
+      16
+    ],
+    "description": "Really Simple SSL & Security is an easy to install and performant security solution for WordPress.",
+    "icon": "really-simple-ssl.png",
+    "js": {
+      "data-rsssl=": "([\\d.]+)\\;version:\\1"
+    },
+    "pricing": [
+      "freemium",
+      "recurring"
+    ],
+    "requires": "WordPress",
+    "saas": true,
+    "scriptSrc": "wp-content/plugins/complianz-gdpr",
+    "website": "https://complianz.io"
+  },
   "REDAXO": {
     "cats": [
       1
