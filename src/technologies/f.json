@@ -446,16 +446,6 @@
     "scriptSrc": "cdn\\.usefathom\\.com/",
     "website": "https://usefathom.com"
   },
-  "Fbits": {
-    "cats": [
-      6
-    ],
-    "icon": "Fbits.png",
-    "js": {
-      "fbits": ""
-    },
-    "website": "https://www.traycorp.com.br"
-  },
   "FeatherX": {
     "cats": [
       90
