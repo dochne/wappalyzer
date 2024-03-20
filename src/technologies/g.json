@@ -302,6 +302,22 @@
     },
     "website": "https://get.gaug.es"
   },
+  "Gcore": {
+    "cats": [
+      31
+    ],
+    "description": "Gcore is a public cloud and content delivery network (CDN) company.",
+    "headers": {
+      "x-id": "^[\\w-]+-gc\\d{2}$",
+      "x-id-fe": "^[\\w-]+-gc\\d{2}$"
+    },
+    "icon": "Gcore.svg",
+    "pricing": [
+      "payg",
+      "recurring"
+    ],
+    "website": "https://gcore.com"
+  },
   "GeeTest": {
     "cats": [
       16
@@ -1132,6 +1148,19 @@
     "saas": true,
     "website": "https://apps.shopify.com/pre-order-pro"
   },
+  "Glofox": {
+    "cats": [
+      72
+    ],
+    "description": "Glofox is a fitness management platform that assists gyms and fitness studios in managing memberships, class scheduling, and other business operations.",
+    "dom": "a[href*='.glofox.com/'], iframe[src*='.glofox.com/']",
+    "icon": "Glofox.svg",
+    "pricing": [
+      "poa"
+    ],
+    "saas": true,
+    "website": "https://www.glofox.com"
+  },
   "Glopal": {
     "cats": [
       106
@@ -1498,6 +1527,20 @@
     "scriptSrc": "gc\\.zgo\\.at/count\\.js",
     "website": "https://www.goatcounter.com/"
   },
+  "Godot": {
+    "cats": [
+      19
+    ],
+    "description": "Godot is a game engine that supports exporting to HTML5 with WebAssembly compatibility.",
+    "icon": "Godot.svg",
+    "implies": "WebAssembly",
+    "js": {
+      "GODOT_CONFIG": "",
+      "Godot": ""
+    },
+    "oss": true,
+    "website": "https://godotengine.org"
+  },
   "Goftino": {
     "cats": [
       52
@@ -1570,8 +1613,8 @@
       36
     ],
     "description": "Google AdSense is a program run by Google through which website publishers serve advertisements that are targeted to the site content and audience.",
-    "icon": "Google AdSense.svg",
     "dom": "amp-ad[type='adsense']",
+    "icon": "Google AdSense.svg",
     "js": {
       "Goog_AdSense_": "",
       "Goog_AdSense_OsdAdapter": "",
@@ -1890,6 +1933,9 @@
     "description": "Google Sign-In is a secure authentication system that reduces the burden of login for users, by enabling them to sign in with their Google account.",
     "dom": "iframe[src*='accounts.google.com/o/oauth2'], a[href*='accounts.google.com/o/oauth2']",
     "icon": "Google.svg",
+    "js": {
+      "googleSignInClientId": ""
+    },
     "meta": {
       "google-signin-client_id": "",
       "google-signin-scope": ""

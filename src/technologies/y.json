@@ -350,6 +350,18 @@
     },
     "website": "https://www.yepcomm.com.br"
   },
+  "YesWiki": {
+    "cats": [
+      8
+    ],
+    "description": "YesWiki is a collaborative website creation and management Free Software under the AGPL license, enabling any web user to create, delete, edit, or comment on site pages with unlimited editors or pages.",
+    "dom": "#yw-container",
+    "icon": "YesWiki.svg",
+    "implies": "PHP",
+    "oss": true,
+    "scriptSrc": "javascripts/yeswiki-base\\.js",
+    "website": "https://yeswiki.net"
+  },
   "Yett": {
     "cats": [
       67
@@ -418,17 +430,16 @@
     "cookies": {
       "YII_CSRF_TOKEN": ""
     },
+    "cpe": "cpe:2.3:a:yiiframework:yii:*:*:*:*:*:*:*:*",
     "description": "Yii is an open-source, object-oriented, component-based MVC PHP web application framework.",
-    "html": [
-      "Powered by <a href=\"http://www\\.yiiframework\\.com/\" rel=\"external\">Yii Framework</a>",
-      "<input type=\"hidden\" value=\"[a-zA-Z0-9]{40}\" name=\"YII_CSRF_TOKEN\" \\/>",
-      "<!\\[CDATA\\[YII-BLOCK-(?:HEAD|BODY-BEGIN|BODY-END)\\]"
-    ],
-    "icon": "Yii.png",
+    "dom": "input[name='YII_CSRF_TOKEN'][type='hidden'], a[href*='//www.yiiframework.com/'][rel='external']",
+    "html": "<!\\[CDATA\\[YII-BLOCK-(?:HEAD|BODY-BEGIN|BODY-END)\\]",
+    "icon": "Yii.svg",
     "implies": "PHP",
+    "oss": true,
     "scriptSrc": [
       "/assets/[a-zA-Z0-9]{8}\\/yii\\.js$",
-      "/yii\\.(?:validation|activeForm)\\.js"
+      "yii(?:\\.|)?(?:validation|activeform)\\.js"
     ],
     "website": "https://www.yiiframework.com"
   },
@@ -661,8 +672,22 @@
       "PHP",
       "MySQL",
       "Redis",
-      "Laravel"
+      "Laravel",
+      "YouCan Pay"
     ],
+    "pricing": [
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://youcan.shop"
+  },
+  "YouCan Pay": {
+    "cats": [
+      41
+    ],
+    "description": "YouCan Pay is a developed electronic payment platform that provides effective solutions for the payment gatways issue in ecommerce in Morocco.",
+    "icon": "YouCan Pay.svg",
     "js": {
       "YCPay": ""
     },
@@ -670,7 +695,7 @@
       "payg"
     ],
     "saas": true,
-    "website": "https://youcan.shop"
+    "website": "https://youcanpay.com"
   },
   "YouPay": {
     "cats": [

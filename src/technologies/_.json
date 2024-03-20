@@ -25,6 +25,24 @@
     "scriptSrc": "bitrix(?:\\.info/|/js/main/core)",
     "website": "https://www.1c-bitrix.ru"
   },
+  "24nettbutikk": {
+    "cats": [
+      6
+    ],
+    "cookies": {
+      " _gat_24nb": "\\;confidence:50",
+      "24nb": "\\;confidence:50"
+    },
+    "description": "24nettbutikk is an ecommerce platform from Norway.",
+    "icon": "24nettbutikk.svg",
+    "pricing": [
+      "mid",
+      "recurring"
+    ],
+    "requires": "Cart Functionality",
+    "saas": true,
+    "website": "https://www.24nettbutikk.no"
+  },
   "2B Advice": {
     "cats": [
       67
@@ -110,12 +128,43 @@
     "headers": {
       "Powered-By": "^42stores$"
     },
+    "icon": "42stores.svg",
     "pricing": [
       "poa",
       "recurring"
     ],
     "saas": true,
     "website": "https://www.42stores.com"
+  },
+  "4Partners": {
+    "cats": [
+      99
+    ],
+    "description": "4Partners is an international dropshipping service that allows you to launch a ready-made online store.",
+    "icon": "4Partners.svg",
+    "pricing": [
+      "poa"
+    ],
+    "website": "https://4partners.io/en/"
+  },
+  "4Partners CMS": {
+    "cats": [
+      6
+    ],
+    "description": "4Partners CMS is a cloud-based solution designed for ecommerce shops.",
+    "icon": "4Partners.svg",
+    "implies": [
+      "PHP",
+      "4Partners",
+      "Nginx"
+    ],
+    "meta": {
+      "author": "^4CMS$"
+    },
+    "pricing": [
+      "poa"
+    ],
+    "website": "https://4partners.io/en/4p-cms"
   },
   "51.LA": {
     "cats": [

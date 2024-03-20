@@ -222,6 +222,15 @@
     "saas": true,
     "website": "https://www.ibexa.co"
   },
+  "IconScout": {
+    "cats": [
+      19
+    ],
+    "description": "IconScout is a platform that offers a diverse collection of high-quality icons and design resources for creative professionals, allowing them to enhance their projects with visually appealing elements.",
+    "dom": "link[href*='.iconscout.com/'], img[src*='.iconscout.com/']",
+    "icon": "IconScout.svg",
+    "website": "https://iconscout.com"
+  },
   "Ideasoft": {
     "cats": [
       6
@@ -539,6 +548,30 @@
     "saas": true,
     "website": "https://www.insyncai.com"
   },
+  "Inblog": {
+    "cats": [
+      1
+    ],
+    "description": "Inblog is a content management system designed for SEO, featuring CTAs and analytics for revenue optimization.",
+    "dom": "link[href*='inblog.ai/_next/static']",
+    "icon": "Inblog.svg",
+    "implies": [
+      "Next.js",
+      "Supabase",
+      "shadcn/ui",
+      "Tailwind CSS"
+    ],
+    "meta": {
+      "generator": "inblog"
+    },
+    "pricing": [
+      "low",
+      "recurring",
+      "freemium"
+    ],
+    "saas": true,
+    "website": "https://inblog.ai"
+  },
   "Incapsula": {
     "cats": [
       31
@@ -549,6 +582,22 @@
     },
     "icon": "Incapsula.png",
     "website": "https://www.incapsula.com"
+  },
+  "Incident.io": {
+    "cats": [
+      13
+    ],
+    "description": "Incident.io is a Slack-integrated incident management tool used to announce, manage, and resolve all incidents in a single channel.",
+    "headers": {
+      "x-webkit-csp": "incident-io-team\\.vercel\\.app"
+    },
+    "icon": "Incident.io.svg",
+    "pricing": [
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://incident.io"
   },
   "Includable": {
     "cats": [
@@ -976,6 +1025,43 @@
     "icon": "Intel Active Management Technology.png",
     "website": "https://intel.com"
   },
+  "Intelligems": {
+    "cats": [
+      74
+    ],
+    "description": "Intelligems is a tool that facilitates profit optimization for ecommerce businesses by allowing easy testing of prices, discounts, and shipping rates with the aim of maximizing margins.",
+    "icon": "Intelligems.svg",
+    "js": {
+      "webpackChunk_intelligems_shopify_plugin": ""
+    },
+    "pricing": [
+      "mid",
+      "recurring"
+    ],
+    "saas": true,
+    "scriptSrc": [
+      "cdn\\.intelligems\\.io/[\\w]+\\.js"
+    ],
+    "website": "https://intelligems.io"
+  },
+  "Intellimize": {
+    "cats": [
+      74,
+      76
+    ],
+    "description": "Intellimize is a platform that utilizes machine learning to optimize website experiences and increase conversions in real-time.",
+    "icon": "Intellimize.svg",
+    "js": {
+      "intellimize": ""
+    },
+    "pricing": [
+      "high",
+      "recurring"
+    ],
+    "saas": true,
+    "scriptSrc": "\\.intellimize\\.co/",
+    "website": "https://www.intellimize.com"
+  },
   "IntenseDebate": {
     "cats": [
       15
@@ -1208,6 +1294,18 @@
     ],
     "website": "https://isotope.metafizzy.co"
   },
+  "Isso": {
+    "cats": [
+      15
+    ],
+    "description": "Isso is a lightweight commenting server written in Python and JavaScript, referred to as \"Ich schrei sonst\" in German.",
+    "implies": "Python",
+    "js": {
+      "Isso.fetchComments": ""
+    },
+    "oss": true,
+    "website": "https://github.com/isso-comments/isso"
+  },
   "Issuu": {
     "cats": [
       19,
@@ -1229,24 +1327,12 @@
     "scriptSrc": "\\.issuu\\.com/",
     "website": "https://issuu.com"
   },
-  "Isso": {
-    "cats": [
-      15
-    ],
-    "description": "Isso is a lightweight commenting server written in Python and JavaScript, referred to as \"Ich schrei sonst\" in German.",
-    "js": {
-      "Isso.fetchComments": ""
-    },
-    "implies": "Python",
-    "oss": true,
-    "website": "https://github.com/posativ/isso/"
-  },
   "Iterable": {
     "cats": [
       32
     ],
     "description": "Iterable is a cross-channel marketing platform that powers unified customer experiences.",
-    "icon": "Iterable.png",
+    "icon": "Iterable.svg",
     "js": {
       "iterableAnalytics": ""
     },
@@ -1254,7 +1340,7 @@
     "scriptSrc": [
       "js\\.iterable\\.com"
     ],
-    "website": "https://iterable.com/"
+    "website": "https://iterable.com"
   },
   "Ivory Search": {
     "cats": [

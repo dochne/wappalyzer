@@ -275,7 +275,10 @@
     "description": "Umbraco is an open-source Microsoft ASP.NET based content management system.",
     "dom": [
       "script[src*='/UmbracoForms/']",
-      "a[data-udi^='umb://']"
+      "a[data-udi^='umb://']",
+      "form[action^='/umbraco/Surface/']",
+      "a[href^='/umbraco/Surface/']",
+      "fieldset.umbraco-forms-fieldset"
     ],
     "headers": {
       "X-Umbraco-Version": "^(.+)$\\;version:\\1"
@@ -367,6 +370,25 @@
     "scriptSrc": "ubembed\\.com",
     "website": "https://unbounce.com"
   },
+  "Unbox": {
+    "cats": [
+      6
+    ],
+    "description": "Unbox is an ecommerce platform for D2C brands.",
+    "dom": "link[imagesrcset*='unbox-customer-images-production'], img[srcset*='unbox-customer-images-production']",
+    "icon": "unbox.svg",
+    "js": {
+      "__NEXT_DATA__.props.pageProps.shop.storeTemplateUrl": "unbox-store-production"
+    },
+    "pricing": [
+      "low",
+      "recurring",
+      "freemium"
+    ],
+    "requires": "Next.js",
+    "saas": true,
+    "website": "https://unbox.com.br"
+  },
   "Unbxd": {
     "cats": [
       76,
@@ -435,8 +457,14 @@
     "cats": [
       67
     ],
-    "icon": "Uniconsent.png",
-    "scriptSrc": "cmp\\.uniconsent\\.mgr\\.consensu\\.org/dfp\\.js",
+    "description": "Uniconsent is a Consent Management Platform.",
+    "icon": "Uniconsent.svg",
+    "pricing": [
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "scriptSrc": "cmp\\.uniconsent\\.mgr\\.consensu\\.org/",
     "website": "https://www.uniconsent.com/"
   },
   "Unicorn Platform": {
@@ -485,13 +513,28 @@
     "scriptSrc": "unpkg\\.com/",
     "website": "https://unpkg.com"
   },
+  "Unpoly": {
+    "cats": [
+      12
+    ],
+    "description": "Unpoly is an unobtrusive Javascript framework for applications that render on the server.",
+    "icon": "Unpoly.svg",
+    "js": {
+      "up.CompilerPass": "\\;confidence:25",
+      "up.framework": "\\;confidence:26",
+      "up.version": "([\\d\\.]+)\\;version:\\1\\;confidence:0"
+    },
+    "oss": true,
+    "scriptSrc": "/unpoly@([\\d\\.]+)/unpoly\\.min\\.js\\;version:\\1",
+    "website": "https://unpoly.com"
+  },
   "Unruly": {
     "cats": [
       36
     ],
     "description": "Unruly is a video advertising platform.",
     "dom": "link[href*='.unrulymedia.com']",
-    "icon": "Unruly.png",
+    "icon": "Unruly.svg",
     "js": {
       "unruly.native": ""
     },
@@ -789,7 +832,7 @@
       10
     ],
     "description": "UserZoom is a cloud-based user experience solution.",
-    "icon": "UserZoom.png",
+    "icon": "UserZoom.svg",
     "pricing": [
       "poa",
       "high",
@@ -798,6 +841,23 @@
     "saas": true,
     "scriptSrc": "\\.userzoom\\.com/",
     "website": "https://www.userzoom.com"
+  },
+  "Userback": {
+    "cats": [
+      73,
+      13
+    ],
+    "description": "Userback is a platform offering visual feedback and bug tracking solutions for websites and web applications, allowing users to provide feedback through screenshots and annotations.",
+    "icon": "Userback.svg",
+    "js": {
+      "Userback.access_token": ""
+    },
+    "pricing": [
+      "mid",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://userback.io"
   },
   "Usercentrics": {
     "cats": [
@@ -897,13 +957,15 @@
     "cats": [
       22
     ],
+    "cpe": "cpe:2.3:a:encode:uvicorn:*:*:*:*:*:*:*:*",
+    "description": "Uvicorn is an ASGI server implementation for Python web applications, commonly used with frameworks like FastAPI to enable asynchronous and high-performance handling of web requests.",
     "headers": {
       "Server": "uvicorn"
     },
     "icon": "uvicorn.png",
     "implies": "Python",
     "oss": true,
-    "website": "https://www.uvicorn.org/"
+    "website": "https://www.uvicorn.org"
   },
   "Uvodo": {
     "cats": [
@@ -925,12 +987,29 @@
     "scriptSrc": "cdn\\.uvo\\.do/",
     "website": "https://uvodo.com"
   },
+  "Uzerly": {
+    "cats": [
+      77
+    ],
+    "description": "Uzerly is a technology-focused company specializing in retargeting.",
+    "headers": {
+      "content-security-policy": "\\.u(?:s|z)erly\\.net"
+    },
+    "icon": "Uzerly.png",
+    "pricing": [
+      "poa",
+      "recurring"
+    ],
+    "saas": true,
+    "scriptSrc": "\\.userly\\.net/",
+    "website": "https://uzerly.fr"
+  },
   "uKnowva": {
     "cats": [
-      1,
-      2,
-      50
+      50,
+      101
     ],
+    "description": "uKnowva is a mobile-enabled HRMS software.",
     "headers": {
       "X-Content-Encoded-By": "uKnowva ([\\d.]+)\\;version:\\1"
     },

@@ -1,4 +1,24 @@
 {
+  "S-COREpion": {
+    "cats": [
+      1
+    ],
+    "description": "S-COREpion is a PHP and MySQL-based content management system (CMS) used for creating and managing websites and web applications.",
+    "headers": {
+      "x-powered-by": "^S-COREpion CMS$"
+    },
+    "icon": "S-COREpion.svg",
+    "implies": [
+      "PHP",
+      "MySQL"
+    ],
+    "pricing": [
+      "poa",
+      "recurring",
+      "onetime"
+    ],
+    "website": "https://s-corepion.ru"
+  },
   "SALESmanago": {
     "cats": [
       97,
@@ -609,7 +629,9 @@
       "SFDCApp": "",
       "SFDCCmp": "",
       "SFDCPage": "",
-      "SFDCSessionVars": ""
+      "SFDCSessionVars": "",
+      "pardot": "",
+      "piHostname": "pi.pardot"
     },
     "pricing": [
       "low"
@@ -795,8 +817,8 @@
     ],
     "description": "Salla is an ecommerce platform specifically tailored to serve businesses and customers in Saudi Arabia.",
     "headers": {
-      "x-powered-by": "^Salla$",
-      "X-Frame-Options": "\\.salla\\.sa"
+      "X-Frame-Options": "\\.salla\\.sa",
+      "x-powered-by": "^Salla$"
     },
     "icon": "Salla.svg",
     "js": {
@@ -1058,6 +1080,25 @@
     "icon": "Schedule Engine.svg",
     "scriptSrc": "webchat.scheduleengine.net",
     "website": "https://www.scheduleengine.com/"
+  },
+  "SchemaPlus": {
+    "cats": [
+      100
+    ],
+    "description": "SchemaPlus is a Shopify app for Shopify ecommerce shops to add schema to them and thereby make them easier to find for search engines.",
+    "icon": "SchemaPlus.png",
+    "js": {
+      "SchemaPlus_Reviews": "",
+      "SchemaPlus_handleCallback": ""
+    },
+    "pricing": [
+      "low",
+      "recurring"
+    ],
+    "requires": "Shopify",
+    "saas": true,
+    "scriptSrc": "//schemaplusfiles\\.s3\\.amazonaws\\.com/",
+    "website": "https://schemaplus.io"
   },
   "Scientific Linux": {
     "cats": [
@@ -1446,6 +1487,25 @@
     "scriptSrc": "cdn\\.segmentstream\\.com",
     "website": "https://segmentstream.com"
   },
+  "Segmentify": {
+    "cats": [
+      97,
+      76
+    ],
+    "description": "Segmentify is an ecommerce personalisation platform.",
+    "icon": "Segmentify.svg",
+    "js": {
+      "SegmentifyIntegration": "",
+      "SegmentifyTrackingObject": ""
+    },
+    "pricing": [
+      "poa"
+    ],
+    "requiresCategory": 6,
+    "saas": true,
+    "scriptSrc": "\\.segmentify\\.com/",
+    "website": "https://segmentify.com"
+  },
   "Seko OmniReturns": {
     "cats": [
       102
@@ -1596,7 +1656,7 @@
     "description": "Sellingo is a Polish ecommerce platform.",
     "dom": {
       "a[href*='sellingo.pl'][target='_blank']": {
-        "text": "Oprogramowanie sklepu internetowego Sellingo.pl"
+        "text": "Sellingo"
       }
     },
     "icon": "Sellingo.svg",
@@ -2246,6 +2306,16 @@
     "saas": true,
     "website": "https://www.shoefitr.io"
   },
+  "Shoelace": {
+    "cats": [
+      66
+    ],
+    "description": "Shoelace is an open-source, framework-agnostic component for building accessible web applications.",
+    "icon": "Shoelace.svg",
+    "oss": true,
+    "scriptSrc": "/npm/@shoelace-style/shoelace@([\\d.]+)\\;version:\\1",
+    "website": "https://shoelace.style"
+  },
   "Shogun Frontend": {
     "cats": [
       108
@@ -2544,7 +2614,8 @@
       "SHOPIFY_API_BASE_URL": "",
       "Shopify": "\\;confidence:25",
       "ShopifyAPI": "",
-      "ShopifyCustomer": ""
+      "ShopifyCustomer": "",
+      "shopifyAccessUrl": ""
     },
     "meta": {
       "shopify-checkout-api-token": "",
@@ -2907,6 +2978,7 @@
       "Symfony"
     ],
     "js": {
+      "mollie_javascript_use_shopware": "",
       "shopStudioGoogleTagManagerCloudGtagCallback": "\\;confidence:50"
     },
     "meta": {
@@ -3135,8 +3207,15 @@
     "description": "Simple Analytics is a privacy-friendly Google Analytics alternative.",
     "icon": "Simple Analytics.svg",
     "js": {
-      "sa_event": ""
+      "sa_event": "\\;confidence:25",
+      "sa_event_loaded": "\\;confidence:50",
+      "sa_loaded": "\\;confidence:25"
     },
+    "pricing": [
+      "low",
+      "recurring"
+    ],
+    "saas": true,
     "scriptSrc": [
       "simpleanalyticscdn\\.com",
       "simpleanalytics\\.io",
@@ -3164,6 +3243,32 @@
     },
     "oss": true,
     "website": "https://www.simplemachines.org"
+  },
+  "Simple.css": {
+    "cats": [
+      66
+    ],
+    "description": "Simple.css is a CSS template.",
+    "dom": "link[href*='cdn.simplecss.org/']",
+    "icon": "Simple.css.png",
+    "oss": true,
+    "website": "https://simplecss.org"
+  },
+  "Simple.ink": {
+    "cats": [
+      51
+    ],
+    "description": "Simple.ink allows you to build no-code websites with Notion.",
+    "dom": "html#simple-ink",
+    "icon": "Simple.ink.svg",
+    "implies": "Notion",
+    "pricing": [
+      "freemium",
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://www.simple.ink"
   },
   "SimpleHTTP": {
     "cats": [
@@ -3260,6 +3365,28 @@
     "saas": true,
     "scriptSrc": "cdn\\.simplo7\\.\\w+/",
     "website": "https://www.simplo7.com.br"
+  },
+  "SimplyBook.me": {
+    "cats": [
+      72
+    ],
+    "description": "SimplyBook.me is an online appointment scheduling and booking software.",
+    "dom": {
+      "a[href*='.simplybook.'][target='_blank']": {
+        "attributes": {
+          "href": "\\.simplybook\\.(?:asia|it|me)"
+        }
+      }
+    },
+    "icon": "SimplyBook.me.svg",
+    "pricing": [
+      "freemium",
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "scriptSrc": "\\.simplybook\\.(?:asia|it|me)",
+    "website": "https://simplybook.me"
   },
   "Simplébo": {
     "cats": [
@@ -3807,6 +3934,15 @@
     },
     "website": "https://sivuviidakko.fi"
   },
+  "SixCMS": {
+    "cats": [
+      1
+    ],
+    "description": "SixCMS is a content management system (CMS) used for creating and managing websites and digital content.",
+    "dom": "img[src*='/sixcms/']",
+    "icon": "SixCMS.svg",
+    "website": "https://www.six.de/produktwelt/content-management/"
+  },
   "Sizebay": {
     "cats": [
       76
@@ -3950,6 +4086,17 @@
     ],
     "saas": true,
     "website": "https://www.skolengo.com"
+  },
+  "Skrollr": {
+    "cats": [
+      59
+    ],
+    "description": "Skrollr is a JavaScript library supporting parallax scrolling on mobile and desktop platforms in a compact 12k minified size.",
+    "js": {
+      "skrollr.VERSION": "^(.+)$\\;version:\\1"
+    },
+    "oss": true,
+    "website": "https://prinzhorn.github.io/skrollr/"
   },
   "Sky-Shop": {
     "cats": [
@@ -4138,7 +4285,10 @@
       "onetime"
     ],
     "saas": true,
-    "scriptSrc": "/wp-content/plugins/revslider/",
+    "scriptSrc": [
+      "/wp-content/plugins/revslider/",
+      "jquery\\.themepunch\\.revolution\\.min\\.js"
+    ],
     "website": "https://www.sliderrevolution.com"
   },
   "Slimbox": {
@@ -4287,6 +4437,20 @@
     "saas": true,
     "scriptSrc": "\\.smartlook\\.com/",
     "website": "https://www.smartlook.com"
+  },
+  "Smartocto": {
+    "cats": [
+      10
+    ],
+    "description": "Smartocto is a smart content analytics system.",
+    "icon": "Smartocto.svg",
+    "pricing": [
+      "high",
+      "poa"
+    ],
+    "saas": true,
+    "scriptSrc": "\\.smartocto\\.com/",
+    "website": "https://smartocto.com"
   },
   "Smartstore": {
     "cats": [
@@ -4896,6 +5060,25 @@
     "website": "https://sonobi.com",
     "xhr": "apex\\.go\\.sonobi\\.com"
   },
+  "Soocommerce": {
+    "cats": [
+      6
+    ],
+    "description": "Soocommerce is a platform specialized in ecommerce software development.",
+    "icon": "Soocommerce.png",
+    "js": {
+      "sessionStorage.firmName": "soocommerce"
+    },
+    "meta": {
+      "author": "Soocommerce"
+    },
+    "pricing": [
+      "mid",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://soocommerce.com/"
+  },
   "Sortable": {
     "cats": [
       36
@@ -5191,17 +5374,37 @@
     "scriptSrc": "cdn\\.shopify\\.com/.+/assets/speedimize\\.js",
     "website": "https://speedimize.io"
   },
+  "Spektrix": {
+    "cats": [
+      53
+    ],
+    "description": "Spektrix is a cloud-based ticketing, marketing, and fundraising CRM system putting audience insight at your fingertips.",
+    "icon": "Spektrix.svg",
+    "pricing": [
+      "poa"
+    ],
+    "saas": true,
+    "scriptSrc": "\\.spektrix\\.com/",
+    "website": "https://www.spektrix.com"
+  },
   "Sphinx": {
     "cats": [
       4
     ],
-    "description": "Sphinx is a tool that makes it easy to create documentation.",
-    "html": "Created using <a href=\"https?://(?:www\\.)?sphinx-doc\\.org/\">Sphinx</a> ([0-9.]+)\\.\\;version:\\1",
+    "description": "Sphinx is a documentation generator for Python projects using reStructuredText.",
+    "dom": {
+      "p.sphinx-version": {
+        "text": "([\\d]+(?:\\.[\\d]+)*)\\;version:\\1"
+      }
+    },
     "icon": "Sphinx.svg",
     "js": {
-      "DOCUMENTATION_OPTIONS": ""
+      "DOCUMENTATION_OPTIONS": "",
+      "SPHINX_HIGHLIGHT_ENABLED": "",
+      "SphinxHighlight": ""
     },
-    "website": "https://www.sphinx-doc.org/"
+    "oss": true,
+    "website": "https://www.sphinx-doc.org"
   },
   "SpiceThemes SpicePress": {
     "cats": [
@@ -5461,9 +5664,16 @@
     "cats": [
       6
     ],
+    "cpe": "cpe:2.3:a:spreecommerce:spree:*:*:*:*:*:*:*:*",
+    "description": "Spree is an open-source ecommerce framework built with Ruby on Rails, providing a customisable and modular platform for building online storefronts.",
     "html": "(?:<link[^>]*/assets/store/all-[a-z\\d]{32}\\.css[^>]+>|<script>\\s*Spree\\.(?:routes|translations|api_key))",
-    "icon": "Spree.png",
+    "icon": "Spree.svg",
     "implies": "Ruby on Rails",
+    "js": {
+      "Spree": "",
+      "SpreeAPI": ""
+    },
+    "oss": true,
     "website": "https://spreecommerce.org"
   },
   "Sprig": {
@@ -5918,39 +6128,6 @@
     "saas": true,
     "website": "https://wpstackable.com"
   },
-  "Stackbit": {
-    "cats": [
-      51
-    ],
-    "description": "Stackbit is a visual experience platform for building decoupled websites.",
-    "dom": {
-      "[data-sb-object-id]": {
-        "exists": ""
-      },
-      "header[data-sb-field-path]": {
-        "attributes": {
-          "data-sb-field-path": ""
-        }
-      },
-      "script#__NEXT_DATA__": {
-        "text": "stackbit"
-      }
-    },
-    "icon": "stackbit.svg",
-    "js": {
-      "__NEXT_DATA__.props.pageProps.withStackbit": ""
-    },
-    "pricing": [
-      "freemium",
-      "mid",
-      "recurring"
-    ],
-    "saas": true,
-    "scriptSrc": [
-      "\\.stackbit\\.com"
-    ],
-    "website": "https://www.stackbit.com"
-  },
   "StackerHQ": {
     "cats": [
       51
@@ -6181,6 +6358,23 @@
     "scriptSrc": "//statuspal\\.io/",
     "website": "https://statuspal.io"
   },
+  "Stay22": {
+    "cats": [
+      104,
+      71
+    ],
+    "description": "Stay22 is a travel tech company that offers affiliate revenue generation opportunities for events, ticketing and travel media publications.",
+    "icon": "Stay22.svg",
+    "js": {
+      "Stay22.version": "([\\d\\.]+)$\\;version:\\1"
+    },
+    "pricing": [
+      "payg"
+    ],
+    "saas": true,
+    "scriptSrc": "\\.stay22\\.com/",
+    "website": "https://www.stay22.com"
+  },
   "Staytus": {
     "cats": [
       13
@@ -6256,6 +6450,20 @@
     "oss": true,
     "website": "https://stitches.dev"
   },
+  "Stoplight": {
+    "cats": [
+      4
+    ],
+    "description": "Stoplight is a company that offers a platform for API design, documentation, testing, and collaboration throughout the API development lifecycle.",
+    "icon": "Stoplight.svg",
+    "pricing": [
+      "mid",
+      "recurring"
+    ],
+    "saas": true,
+    "scriptSrc": "//stoplight\\.io/",
+    "website": "https://stoplight.io"
+  },
   "StoreHippo": {
     "cats": [
       6
@@ -6269,16 +6477,6 @@
     ],
     "saas": true,
     "website": "https://www.storehippo.com"
-  },
-  "Storeden": {
-    "cats": [
-      6
-    ],
-    "headers": {
-      "X-Powered-By": "Storeden"
-    },
-    "icon": "storeden.svg",
-    "website": "https://www.storeden.com"
   },
   "Storefront UI": {
     "cats": [
@@ -6421,6 +6619,7 @@
     },
     "icon": "Strapi.svg",
     "oss": true,
+    "scripts": "(?://|-)strapi-",
     "website": "https://strapi.io"
   },
   "Strato": {
@@ -6497,7 +6696,8 @@
     "js": {
       "Stripe.version": "^(.+)$\\;version:\\1",
       "__NEXT_DATA__.props.pageProps.appSettings.STRIPE_API_PUBLIC_KEY": "",
-      "checkout.enabledpayments.stripe": "^true$"
+      "checkout.enabledpayments.stripe": "^true$",
+      "stripePublicKey": ""
     },
     "pricing": [
       "payg"
@@ -6773,7 +6973,8 @@
     "implies": "PostgreSQL",
     "js": {
       "__NUXT__.config.public.SUPABASE_URL": "",
-      "__NUXT__.config.public.supabase": ""
+      "__NUXT__.config.public.supabase": "",
+      "supabase.storageKey": ""
     },
     "oss": true,
     "pricing": [
@@ -6926,7 +7127,7 @@
       12
     ],
     "description": "Svelte is a free and open-source front end compiler created by Rich Harris and maintained by the Svelte core team members.",
-    "dom": "[class*='svelte-']",
+    "dom": "[class*='svelte-'], link[href*='/svelte/']",
     "icon": "Svelte.svg",
     "oss": true,
     "website": "https://svelte.dev"
@@ -6963,6 +7164,7 @@
     "cats": [
       4
     ],
+    "css": "swagger-ui",
     "description": "Swagger UI is a collection of HTML, JavaScript, and CSS assets that dynamically generate documentation from a Swagger-compliant API.",
     "icon": "Swagger UI.svg",
     "js": {
@@ -7082,7 +7284,7 @@
     ],
     "description": "Swiper is a JavaScript library that creates modern touch sliders with hardware-accelerated transitions.",
     "dom": [
-      "div[data-swiper-slide-index]", 
+      "div[data-swiper-slide-index]",
       "swiper-container",
       "swiper-slide",
       "div.swiper-wrapper",
@@ -7096,6 +7298,19 @@
     "oss": true,
     "scriptSrc": "swiper(?:\\.min)?\\.js",
     "website": "https://swiperjs.com"
+  },
+  "Swup": {
+    "cats": [
+      59
+    ],
+    "description": "Swup is a versatile and expandable library for implementing page transitions on websites that use server-side rendering.",
+    "dom": "html[class*='swup-enabled']",
+    "icon": "Swup.svg",
+    "js": {
+      "Swup": ""
+    },
+    "oss": true,
+    "website": "https://swup.js.org"
   },
   "Swym Wishlist Plus": {
     "cats": [
@@ -7235,8 +7450,12 @@
   },
   "Systeme.io": {
     "cats": [
-      32
+      32,
+      71
     ],
+    "cookies": {
+      "systeme_affiliate": ""
+    },
     "description": "Systeme.io is an all-in-one marketing platform that helps businesses create and launch sales funnels, affiliate programs, email marketing campaigns, online courses, blogs, and websites.",
     "dom": "from[action*='//systeme.io/'], a[href*='//systeme.io/']",
     "icon": "Systeme.io.svg",
@@ -7307,6 +7526,21 @@
     "icon": "scrollreveal.svg",
     "scriptSrc": "scrollreveal(?:\\.min)(?:\\.js)",
     "website": "https://scrollrevealjs.org"
+  },
+  "shadcn-svelte": {
+    "cats": [
+      66
+    ],
+    "description": "Shadcn-svelte is an adaptation of shadcn/ui for Svelte, offering accessible and customisable components.",
+    "dom": "link[href*='shadcn-svelte']",
+    "icon": "ShadCnSvelte.svg",
+    "js": {
+      "sessionStorage.sveltekit:scroll": "",
+      "sessionStorage.sveltekit:snapshot": ""
+    },
+    "oss": true,
+    "requires": "Svelte",
+    "website": "https://www.shadcn-svelte.com"
   },
   "shadcn/ui": {
     "cats": [

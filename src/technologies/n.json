@@ -170,6 +170,22 @@
     "scriptSrc": "app\\.najva\\.com/",
     "website": "https://www.najva.com"
   },
+  "NamelessMC": {
+    "cats": [
+      1
+    ],
+    "cpe": "cpe:2.3:a:namelessmc:nameless:*:*:*:*:*:*:*:*",
+    "description": "NamelessMC is an open-source website software geared towards gaming communities, offering features such as forums and user profiles for managing online presence.",
+    "dom": "span.item > a[href*='//namelessmc.com']",
+    "icon": "NamelessMC.png",
+    "implies": [
+      "PHP",
+      "Laravel",
+      "MySQL"
+    ],
+    "oss": true,
+    "website": "https://namelessmc.com"
+  },
   "Narrativ": {
     "cats": [
       71
@@ -402,9 +418,15 @@
       6
     ],
     "cookies": {
-      "NS_VER": ""
+      "NS_VER": "^([\\d\\.]+)$\\;version:\\1"
     },
-    "icon": "NetSuite.png",
+    "description": "NetSuite is a cloud-based enterprise resource planning (ERP) software suite that provides a comprehensive set of business management applications, including financial management, CRM, ecommerce, and more.",
+    "icon": "NetSuite.svg",
+    "pricing": [
+      "onetime",
+      "high"
+    ],
+    "saas": true,
     "website": "https://netsuite.com"
   },
   "Netcore Cloud": {
@@ -459,6 +481,39 @@
     "url": "^https?://[^/]+\\.netlify\\.(?:com|app)/",
     "website": "https://www.netlify.com/",
     "xhr": "cdn\\.netlify\\.com"
+  },
+  "Netlify Create": {
+    "cats": [
+      51
+    ],
+    "description": "Netlify Create (formerly Stackbit) is a visual experience platform for building decoupled websites.",
+    "dom": {
+      "[data-sb-object-id]": {
+        "exists": ""
+      },
+      "header[data-sb-field-path]": {
+        "attributes": {
+          "data-sb-field-path": ""
+        }
+      },
+      "script#__NEXT_DATA__": {
+        "text": "stackbit"
+      }
+    },
+    "icon": "Netlify.svg",
+    "js": {
+      "__NEXT_DATA__.props.pageProps.withStackbit": ""
+    },
+    "pricing": [
+      "freemium",
+      "mid",
+      "recurring"
+    ],
+    "saas": true,
+    "scriptSrc": [
+      "\\.stackbit\\.com"
+    ],
+    "website": "https://www.stackbit.com"
   },
   "Netlify Forms": {
     "cats": [
@@ -1015,6 +1070,21 @@
     "saas": true,
     "website": "https://noibu.com"
   },
+  "Northbeam": {
+    "cats": [
+      10
+    ],
+    "description": "Northbeam is a platform for marketing measurement that uses machine learning for DTC and ecommerce brands.",
+    "dom": "script[data-src*='.northbeam.io/']",
+    "icon": "Northbeam.svg",
+    "pricing": [
+      "high",
+      "recurring"
+    ],
+    "saas": true,
+    "scriptSrc": "\\.northbeam\\.io/",
+    "website": "https://www.northbeam.io"
+  },
   "Norton Shopping Guarantee": {
     "cats": [
       16
@@ -1072,6 +1142,23 @@
     "saas": true,
     "scriptSrc": "\\.stackla\\.com/",
     "website": "https://www.nosto.com/products/visual-ugc/"
+  },
+  "Notifly": {
+    "cats": [
+      32
+    ],
+    "description": "Notifly is a marketing automation tool designed to streamline the process of running multi-channel campaigns.",
+    "icon": "Notifly.svg",
+    "js": {
+      "NotiflyWebMessageRenderer": "",
+      "__notiflyCafe24Config": "",
+      "notifly": ""
+    },
+    "pricing": [
+      "poa"
+    ],
+    "saas": true,
+    "website": "https://notifly.tech"
   },
   "Notion": {
     "cats": [

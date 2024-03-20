@@ -110,7 +110,9 @@
     "implies": "Microsoft ASP.NET",
     "js": {
       "DotNetNuke": "",
-      "dnn.apiversion": "^([\\d\\.]+)$\\;version:\\1"
+      "__dnncore": "",
+      "dnn.apiversion": "^([\\d\\.]+)$\\;version:\\1",
+      "dnnJscriptVersion": ""
     },
     "meta": {
       "generator": "DotNetNuke"
@@ -250,6 +252,22 @@
       "name": "dailymotion-domain-verification"
     },
     "website": "https://www.dailymotion.com"
+  },
+  "DanDomain Webshop": {
+    "cats": [
+      6
+    ],
+    "description": "DanDomain Webshop is a Danish ecommerce platform provided by DanDomain, offering businesses the tools to create and manage their online stores.",
+    "icon": "DanDomain.svg",
+    "meta": {
+      "generator": "^DanDomain\\sWebshop$"
+    },
+    "pricing": [
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://dandomain.dk/webshop"
   },
   "Dancer": {
     "cats": [
@@ -774,6 +792,22 @@
     "icon": "DigiCert.svg",
     "website": "https://www.digicert.com/"
   },
+  "DigiFi": {
+    "cats": [
+      6
+    ],
+    "description": "DigiFi is a subscription-based software that allows anyone to set up an online store and sell their products.",
+    "icon": "DigiFi.svg",
+    "meta": {
+      "generator": "^Digify$"
+    },
+    "pricing": [
+      "recurring",
+      "low"
+    ],
+    "saas": true,
+    "website": "https://digify.shop"
+  },
   "Digismoothie Candy Rack": {
     "cats": [
       100
@@ -862,6 +896,19 @@
     "saas": true,
     "scriptSrc": "\\.digitalriver\\.com/",
     "website": "https://www.digitalriver.com"
+  },
+  "Digizuite": {
+    "cats": [
+      95
+    ],
+    "description": "Digizuite is a Digital Asset Management software for enterprises.",
+    "dom": "img[src^='/globalassets/digizuite/']",
+    "icon": "Digizuite.png",
+    "pricing": [
+      "poa"
+    ],
+    "saas": true,
+    "website": "https://www.digizuite.com"
   },
   "DirectAdmin": {
     "cats": [
@@ -997,6 +1044,23 @@
     "saas": true,
     "scriptSrc": "storage\\.googleapis\\.com/dito/sdk\\.js",
     "website": "https://www.dito.com.br"
+  },
+  "Divhunt": {
+    "cats": [
+      51
+    ],
+    "description": "Divhunt is an SPA builder.",
+    "icon": "Divhunt.svg",
+    "js": {
+      "Divhunt": ""
+    },
+    "pricing": [
+      "onetime",
+      "recurring"
+    ],
+    "saas": true,
+    "scriptSrc": "divhunt-site\\.\\w-cdn\\.net/",
+    "website": "https://www.divhunt.com"
   },
   "Divi": {
     "cats": [
@@ -1359,6 +1423,21 @@
     "scriptSrc": "/wp-content/plugins/doppler-for-woocommerce/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1",
     "website": "https://wordpress.org/plugins/doppler-for-woocommerce/"
   },
+  "Dorik AI": {
+    "cats": [
+      66
+    ],
+    "description": "Dorik is an AI website-building platform that requires no design or coding experience.",
+    "dom": "link[href*='cdn.dorik.com'], section[class*='dorik-section'] ",
+    "icon": "DorikAI.svg",
+    "pricing": [
+      "low",
+      "recurring",
+      "freemium"
+    ],
+    "saas": true,
+    "website": "https://dorik.com"
+  },
   "Dotclear": {
     "cats": [
       1
@@ -1434,6 +1513,25 @@
     ],
     "saas": true,
     "website": "https://www.doteasy.com/website-builder/"
+  },
+  "Dotser": {
+    "cats": [
+      6
+    ],
+    "description": "Dotser is a web software development company specialising in ecommerce and cloud-based business solutions.",
+    "icon": "Dotser.png",
+    "implies": [
+      "PHP",
+      "MySQL"
+    ],
+    "meta": {
+      "generator": "^Dotser\\sCommerce\\s([\\d\\.]+)/\\;version:\\1"
+    },
+    "pricing": [
+      "poa"
+    ],
+    "saas": true,
+    "website": "https://www.dotser.ie"
   },
   "DoubleClick Ad Exchange (AdX)": {
     "cats": [

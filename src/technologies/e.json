@@ -477,6 +477,29 @@
     "oss": true,
     "website": "https://editorjs.io"
   },
+  "Effector": {
+    "cats": [
+      59
+    ],
+    "description": "Effector is a JavaScript state management library that facilitates the handling of application state and side effects in a reactive and efficient manner, commonly used with frameworks like React.",
+    "icon": "Effector.svg",
+    "oss": true,
+    "scriptSrc": "/npm/effector(?:-(?:react|vue))?/",
+    "website": "https://effector.dev"
+  },
+  "Effiliation": {
+    "cats": [
+      71
+    ],
+    "description": "Effiliation is a performance marketing platform and affiliate network that facilitates partnerships between advertisers and publishers for commission-based promotion of products and services.",
+    "icon": "Effiliation.png",
+    "pricing": [
+      "poa"
+    ],
+    "saas": true,
+    "scriptSrc": "\\.effiliation\\.com/",
+    "website": "https://www.effiliation.com"
+  },
   "Efilli": {
     "cats": [
       67

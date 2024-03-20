@@ -237,6 +237,22 @@
     "scriptSrc": "builder\\.launchrock\\.com",
     "website": "https://www.launchrock.com"
   },
+  "LawPay": {
+    "cats": [
+      41
+    ],
+    "description": "Payment for law firms.",
+    "icon": "Lawpay.svg",
+    "pricing": [
+      "recurring",
+      "payg"
+    ],
+    "saas": true,
+    "scriptSrc": [
+      "\\b(?:lawpay)\\b"
+    ],
+    "website": "https://www.lawpay.com"
+  },
   "LayBuy": {
     "cats": [
       91
@@ -345,6 +361,26 @@
     "requires": "LiveChat",
     "scriptSrc": "(?://|\\.)chatsystem\\.io/",
     "website": "https://www.leadchat.com"
+  },
+  "LeadDyno": {
+    "cats": [
+      71,
+      10
+    ],
+    "cookies": {
+      "_leaddyno_session": ""
+    },
+    "description": "LeadDyno is a platform that provides affiliate marketing and tracking services, allowing businesses to set up, manage, and analyse their affiliate programs.",
+    "icon": "LeadDyno.svg",
+    "js": {
+      "LeadDyno": ""
+    },
+    "pricing": [
+      "mid",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://www.leaddyno.com"
   },
   "Leadfeeder": {
     "cats": [
@@ -456,7 +492,6 @@
       87
     ],
     "description": "LearnDash is a WordPress plugin that enables the creation and management of online courses, quizzes, and educational content within a website.",
-    "icon": "LearnDash.svg",
     "dom": {
       "link[href*='/wp-content/plugins/sfwd-lms/']": {
         "attributes": {
@@ -464,12 +499,13 @@
         }
       }
     },
-    "requires": "WordPress",
+    "icon": "LearnDash.svg",
     "pricing": [
       "low",
       "onetime",
       "recurring"
     ],
+    "requires": "WordPress",
     "website": "https://www.learndash.com"
   },
   "LearnWorlds": {
@@ -584,6 +620,7 @@
     "description": "Lenis is a smooth scroll library to normalise the scrolling experience across devices.",
     "icon": "Lenis.svg",
     "js": {
+      "Lenis": "",
       "lenisVersion": "([\\d\\.]+)\\;version:\\1"
     },
     "oss": true,
@@ -610,8 +647,10 @@
     "cats": [
       19
     ],
-    "html": "<link[^>]+ rel=\"stylesheet/less\"",
-    "icon": "Less.png",
+    "description": "Less is a CSS preprocessor, providing a set of extensions and features to traditional Cascading Style Sheets (CSS) for improved maintainability and ease of styling in web development.",
+    "dom": "link[rel='stylesheet/less']",
+    "icon": "Less.svg",
+    "oss": true,
     "website": "https://lesscss.org"
   },
   "Let's Encrypt": {
@@ -918,6 +957,24 @@
     "oss": true,
     "website": "https://www.linen.dev"
   },
+  "Linguise": {
+    "cats": [
+      89
+    ],
+    "description": "Linguise is an automatic translation service with a front-end translation editor.",
+    "dom": "script[type='linguise/json]",
+    "icon": "Linguise.svg",
+    "js": {
+      "linguise_configs": ""
+    },
+    "pricing": [
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "scriptSrc": "/modules/mod_linguise/assets/",
+    "website": "https://www.linguise.com"
+  },
   "LinkMink": {
     "cats": [
       10,
@@ -1093,7 +1150,7 @@
     "icon": "LiteSpeed.svg",
     "website": "https://litespeedtech.com"
   },
-  "Litespeed Cache": {
+  "LiteSpeed Cache": {
     "cats": [
       23,
       87
@@ -1104,8 +1161,13 @@
       "x-turbo-charged-by": "LiteSpeed"
     },
     "icon": "litespeed-cache.png",
+    "implies": "LiteSpeed",
+    "js": {
+      "litespeed_docref": ""
+    },
     "requires": "WordPress",
-    "website": "https://wordpress.org/plugins/litespeed-cache/"
+    "scriptSrc": "wp-content/plugins/litespeed-cache/",
+    "website": "https://www.litespeedtech.com/products/cache-plugins/wordpress-acceleration"
   },
   "Lithium": {
     "cats": [
@@ -1121,6 +1183,20 @@
       "LITHIUM": ""
     },
     "website": "https://www.lithium.com"
+  },
+  "Litmus": {
+    "cats": [
+      10
+    ],
+    "description": "Litmus is an Email Analytics tool that offers email designers advanced open and read statistics for their email campaigns.",
+    "dom": "img[src*='.emltrk.com/']",
+    "icon": "Litmus.svg",
+    "pricing": [
+      "mid",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://emltrk.com"
   },
   "Littledata": {
     "cats": [
@@ -1491,6 +1567,18 @@
     "saas": true,
     "website": "https://apps.shopify.com/locksmith"
   },
+  "Locomotive Scroll": {
+    "cats": [
+      59
+    ],
+    "description": "Locomotive Scroll is an opinionated JavaScript library that provides smooth scrolling animations and advanced scroll interactions for web applications.",
+    "implies": "Lenis",
+    "js": {
+      "LocomotiveScroll": ""
+    },
+    "oss": true,
+    "website": "https://github.com/locomotivemtl/locomotive-scroll"
+  },
   "LocomotiveCMS": {
     "cats": [
       1
@@ -1518,23 +1606,6 @@
     },
     "scriptSrc": "lodash.*\\.js",
     "website": "https://www.lodash.com"
-  },
-  "Loglib": {
-    "cats": [
-      10
-    ],
-    "description": "Loglib is a Open Source and Privacy-First web analytics that aims to provide simple yet can be powerful based on your needs.",
-    "icon": "Loglib.svg",
-    "js": {
-      "lli": "",
-      "llc": ""
-    },
-    "pricing": [
-      "freemium"
-    ],
-    "oss": true,
-    "saas": true,
-    "website": "https://www.loglib.io"
   },
   "LogRocket": {
     "cats": [
@@ -1626,6 +1697,23 @@
       "\\.lrcontent\\.com"
     ],
     "website": "https://www.loginradius.com"
+  },
+  "Loglib": {
+    "cats": [
+      10
+    ],
+    "description": "Loglib is a Open Source and Privacy-First web analytics that aims to provide simple yet can be powerful based on your needs.",
+    "icon": "Loglib.svg",
+    "js": {
+      "llc": "",
+      "lli": ""
+    },
+    "oss": true,
+    "pricing": [
+      "freemium"
+    ],
+    "saas": true,
+    "website": "https://www.loglib.io"
   },
   "LogoiX": {
     "cats": [
@@ -1744,6 +1832,20 @@
     "requiresCategory": 6,
     "saas": true,
     "website": "https://www.loopreturns.com"
+  },
+  "Loop Web": {
+    "cats": [
+      47
+    ],
+    "icon": "Loop Web.png",
+    "meta": {
+      "loopweb": ""
+    },
+    "pricing": [
+      "poa",
+      "payg"
+    ],
+    "website": "https://www.loopweb.ir"
   },
   "Loop54": {
     "cats": [
@@ -1903,6 +2005,16 @@
     "icon": "Lucene.png",
     "implies": "Java",
     "website": "https://lucene.apache.org/core/"
+  },
+  "Lucide": {
+    "cats": [
+      17
+    ],
+    "description": "Lucide is an open-source icon library that provides 1000+ vector (svg) files for displaying icons and symbols in digital and non-digital projects.",
+    "dom": "svg.lucide",
+    "icon": "Lucide.svg",
+    "oss": true,
+    "website": "https://lucide.dev"
   },
   "Lucky Orange": {
     "cats": [

@@ -106,6 +106,19 @@
     "oss": true,
     "website": "https://cssinjs.org/"
   },
+  "JSZip": {
+    "cats": [
+      59
+    ],
+    "cpe": "cpe:2.3:a:jszip_project:jszip:*:*:*:*:*:*:*:*",
+    "description": "JSZip is a JavaScript library that enables the creation, reading, and manipulation of zip files in a browser environment.",
+    "js": {
+      "JSZip.version": "([\\d\\.]+)\\;version:\\1"
+    },
+    "oss": true,
+    "scriptSrc": "/jszip\\.min\\.js",
+    "website": "https://stuk.github.io/jszip/"
+  },
   "JShop": {
     "cats": [
       6

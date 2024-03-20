@@ -24,6 +24,9 @@
       "NS": "\\d+\\.ovh\\.net",
       "SOA": "\\d+\\.ovh\\.net"
     },
+    "headers": {
+      "x-iplb-request-id": ""
+    },
     "icon": "OVHcloud.svg",
     "pricing": [
       "payg"
@@ -1159,14 +1162,23 @@
   },
   "OpenUI5": {
     "cats": [
-      12
+      12,
+      66
     ],
+    "cookies": {
+      "sap-usercontext": "sap-client"
+    },
+    "description": "OpenUI5 is a JavaScript UI Framework released by SAP under the Apache 2.0 license.",
     "icon": "OpenUI5.png",
     "js": {
       "sap.ui.version": "^(.+)$\\;version:\\1"
     },
+    "meta": {
+      "sap-ui-fesr": ""
+    },
+    "oss": true,
     "scriptSrc": "sap-ui-core\\.js",
-    "website": "https://openui5.org/"
+    "website": "https://openui5.org"
   },
   "OpenWeb": {
     "cats": [
@@ -1462,6 +1474,19 @@
     },
     "icon": "Oracle.svg",
     "website": "https://cloud.oracle.com/commerce-cloud"
+  },
+  "Oracle Content Management": {
+    "cats": [
+      1
+    ],
+    "description": "Oracle Content Management is a cloud-based platform designed for organisations to create, store, manage, and deliver digital content while supporting structured content organisation, collaboration, and seamless integration with other applications.",
+    "icon": "Oracle.svg",
+    "pricing": [
+      "poa"
+    ],
+    "saas": true,
+    "scriptSrc": "/_sitesclouddelivery/renderer/renderer\\.js",
+    "website": "https://www.oracle.com/content-management"
   },
   "Oracle Dynamic Monitoring Service": {
     "cats": [

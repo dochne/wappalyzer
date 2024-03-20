@@ -29,7 +29,8 @@
     "description": "RD Station is a platform that helps medium and small businesses manage and automate their Digital Marketing strategy.",
     "icon": "RD Station.png",
     "js": {
-      "RDStation": ""
+      "RDStation": "",
+      "RDStationTrackingCodeChecker": ""
     },
     "scriptSrc": "d335luupugsy2\\.cloudfront\\.net/js/loader-scripts/.*-loader\\.js",
     "website": "https://rdstation.com.br"
@@ -108,6 +109,11 @@
       "link[type*='application']": {
         "attributes": {
           "type": "application/(?:rss|atom)\\+xml"
+        }
+      },
+      "rss": {
+        "attributes": {
+          "version": "([\\d\\.]+)\\;version:\\1"
         }
       }
     },
@@ -250,6 +256,20 @@
     ],
     "saas": true,
     "website": "https://raisely.com"
+  },
+  "Raku-uru Cart": {
+    "cats": [
+      6
+    ],
+    "description": "Raku-uru Cart is an all-in-one ecommerce platform from Japan.",
+    "icon": "Raku-uru Cart.png",
+    "pricing": [
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "scriptSrc": "\\.raku-uru\\.jp/cms",
+    "website": "https://business.kuronekoyamato.co.jp/raku-uru/"
   },
   "Rakuten": {
     "cats": [
@@ -576,7 +596,8 @@
     "js": {
       "React.version": "^([\\d\\.]+)$\\;version:\\1",
       "ReactOnRails": "",
-      "__REACT_ON_RAILS_EVENT_HANDLERS_RAN_ONCE__": ""
+      "__REACT_ON_RAILS_EVENT_HANDLERS_RAN_ONCE__": "",
+      "__isReactFizzContext": ""
     },
     "meta": {
       "description": "^Web site created using create-react-app$"
@@ -609,6 +630,32 @@
     "requires": "React",
     "saas": true,
     "website": "https://reactbricks.com"
+  },
+  "React Flow": {
+    "cats": [
+      59
+    ],
+    "description": "React Flow is a library for building node-based applications.",
+    "dom": {
+      "style[type='text/css']": {
+        "text": "react-flow"
+      }
+    },
+    "icon": "React Flow.svg",
+    "oss": true,
+    "requires": "React",
+    "website": "https://reactflow.dev"
+  },
+  "React Native for Web": {
+    "cats": [
+      59
+    ],
+    "description": "React Native for Web is a library that allows developers to use React Native components and patterns to build cross-platform web applications alongside native mobile applications.",
+    "dom": "style#react-native-stylesheet",
+    "icon": "React.svg",
+    "implies": "React",
+    "oss": true,
+    "website": "https://necolas.github.io/react-native-web/"
   },
   "React Redux": {
     "cats": [
@@ -1304,6 +1351,9 @@
       6
     ],
     "description": "Remarkable Commerce is a technology and services company which provides a ecommerce platform for mid-sized retailers.",
+    "headers": {
+      "x-powered-by": "Remarkable Commerce"
+    },
     "icon": "Remarkable.png",
     "js": {
       "Remarkable.BasketItems": ""
@@ -1338,6 +1388,24 @@
     "icon": "remixd.svg",
     "scriptSrc": "tags\\.remixd\\.com/player",
     "website": "https://www.remixd.com"
+  },
+  "Remotion": {
+    "cats": [
+      14
+    ],
+    "description": "Remotion is a software tool that enables the creation of videos through React programming.",
+    "icon": "Remotion.png",
+    "implies": "React",
+    "js": {
+      "remotion_imported": "^([\\d\\.]+)$\\;version:\\1",
+      "remotion_renderReady": ""
+    },
+    "pricing": [
+      "low",
+      "freemium",
+      "recurring"
+    ],
+    "website": "https://remotion.dev"
   },
   "Render": {
     "cats": [
@@ -1406,6 +1474,25 @@
       "recurring"
     ],
     "website": "https://replit.com"
+  },
+  "Replo": {
+    "cats": [
+      51
+    ],
+    "description": "Replo is a platform offering customizable landing pages designed for ecommerce teams.",
+    "dom": [
+      "div[id='replo-fullpage-element']",
+      "script[id='replo-deps-element-id']"
+    ],
+    "icon": "replo.svg",
+    "pricing": [
+      "mid",
+      "recurring"
+    ],
+    "requires": "Shopify",
+    "saas": true,
+    "scriptSrc": "replocdn\\.com/",
+    "website": "https://www.replo.app"
   },
   "Reputon": {
     "cats": [
@@ -1649,6 +1736,42 @@
     "scriptSrc": "cdn\\.retailrocket\\.net",
     "website": "https://retailrocket.net"
   },
+  "Retention.com": {
+    "cats": [
+      100,
+      36
+    ],
+    "description": "Retention.com's identity resolution software helps Shopify merchants recover lost shoppers.",
+    "icon": "Retention.com.svg",
+    "js": {
+      "addedToCartRetentionButton": "",
+      "viewedProductRetention": ""
+    },
+    "pricing": [
+      "mid",
+      "payg",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://retention.com"
+  },
+  "Retool": {
+    "cats": [
+      47
+    ],
+    "description": "Retool is a development platform that enables the rapid creation and customisation of internal tools, including admin dashboards and database interfaces, through a combination of drag-and-drop components and code.",
+    "icon": "Retool.svg",
+    "js": {
+      "RETOOL_PAGE_SUSPEND_DETECTED": ""
+    },
+    "pricing": [
+      "low",
+      "freemium",
+      "recurring"
+    ],
+    "url": "^https://retool\\.[\\d\\w\\-]+\\.(?:com|io)/",
+    "website": "https://retool.com"
+  },
   "Return Prime": {
     "cats": [
       100,
@@ -1757,13 +1880,15 @@
     "cats": [
       12
     ],
-    "icon": "Reveal.js.png",
+    "description": "Reveal.js is a JavaScript framework for building dynamic and interactive presentations using web technologies like HTML, CSS, and JavaScript.",
+    "icon": "reveal.js.svg",
     "implies": "Highlight.js",
     "js": {
       "Reveal.VERSION": "^(.+)$\\;version:\\1"
     },
+    "oss": true,
     "scriptSrc": "(?:^|/)reveal(?:\\.min)?\\.js",
-    "website": "https://lab.hakim.se/reveal-js"
+    "website": "https://revealjs.com"
   },
   "Revel": {
     "cats": [

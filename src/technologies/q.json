@@ -314,6 +314,21 @@
     "scriptSrc": "\\.quicksell\\.co/",
     "website": "https://quicksell.co"
   },
+  "Quickblog": {
+    "cats": [
+      11
+    ],
+    "description": "Quickblog is a platform that aids bloggers and agencies in producing embedded, SEO-ready blog content seamlessly compatible with any existing website.",
+    "icon": "Quickblog.png",
+    "pricing": [
+      "freemium",
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "scriptSrc": "\\.quickblog\\.co/",
+    "website": "https://www.quickblog.co"
+  },
   "Quickbutik": {
     "cats": [
       6
@@ -397,6 +412,23 @@
     ],
     "saas": true,
     "website": "https://www.quintype.com"
+  },
+  "Quoli": {
+    "cats": [
+      100,
+      90
+    ],
+    "description": "Quoli is a Shopify app designed to help merchants collect and showcase social proof, incorporating product reviews, photos/videos, attributes, nuggets, questions, and user-generated content (UGC).",
+    "icon": "Quoli.png",
+    "pricing": [
+      "freemium",
+      "low",
+      "recurring"
+    ],
+    "requires": "Shopify",
+    "saas": true,
+    "scriptSrc": "\\.quoli\\.io/",
+    "website": "https://quoli.io"
   },
   "Quora Pixel": {
     "cats": [

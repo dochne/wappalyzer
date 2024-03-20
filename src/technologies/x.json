@@ -191,6 +191,19 @@
     "icon": "Xitami.png",
     "website": "https://xitami.com"
   },
+  "Xiuno BBS": {
+    "cats": [
+      1
+    ],
+    "cpe": "cpe:2.3:a:xiuno:xiunobbs:*:*:*:*:*:*:*:*",
+    "icon": "Xiuno BBS.png",
+    "implies": "PHP",
+    "meta": {
+      "author": "XiunoBBS\\s([\\d\\.]+)\\;version:\\1"
+    },
+    "oss": true,
+    "website": "https://xiunobbs.cn"
+  },
   "Xonic": {
     "cats": [
       6
@@ -264,6 +277,22 @@
       "recurring"
     ],
     "website": "https://www.xserver.ne.jp"
+  },
+  "Xtime": {
+    "cats": [
+      72
+    ],
+    "description": "Xtime is a company that provides automotive service scheduling and management solutions primarily for car dealerships and automotive service centers.",
+    "dom": "a[data-modified-by='xtime']",
+    "icon": "Xtime.svg",
+    "js": {
+      "xtime": ""
+    },
+    "pricing": [
+      "poa"
+    ],
+    "scriptSrc": "\\.xtime\\.com/scheduling",
+    "website": "https://xtime.com"
   },
   "Xtra": {
     "cats": [

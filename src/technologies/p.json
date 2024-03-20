@@ -1,4 +1,21 @@
 {
+  "PCI Proxy": {
+    "cats": [
+      41
+    ],
+    "description": "PCI Proxy is a tokenization platform that enables organisations worldwide to embrace a modern approach to payment flexibility and data security.",
+    "headers": {
+      "content-security-policy": "\\.datatrans\\.(?:com|biz)"
+    },
+    "icon": "PCI Proxy.svg",
+    "pricing": [
+      "mid",
+      "recurring"
+    ],
+    "saas": true,
+    "scripts": "\\.datatrans\\.com",
+    "website": "https://www.pci-proxy.com"
+  },
   "PCRecruiter": {
     "cats": [
       101
@@ -82,19 +99,21 @@
       1
     ],
     "cpe": "cpe:2.3:a:phpfusion:phpfusion:*:*:*:*:*:*:*:*",
+    "description": "PHPFusion is an open-source content management system (CMS) and web application framework written in PHP.",
     "headers": {
       "X-PHPFusion": "(.+)$\\;version:\\1",
-      "X-Powered-By": "PHPFusion (.+)$\\;version:\\1"
+      "X-Powered-By": "PHP(?:-)?Fusion (.+)$\\;version:\\1"
     },
     "html": [
       "Powered by <a href=\"[^>]+phpfusion",
       "Powered by <a href=\"[^>]+php-fusion"
     ],
-    "icon": "PHPFusion.png",
+    "icon": "PHPFusion.svg",
     "implies": [
       "PHP",
       "MySQL"
     ],
+    "oss": true,
     "website": "https://phpfusion.com"
   },
   "PIXIjs": {
@@ -549,6 +568,20 @@
     ],
     "saas": true,
     "website": "https://prf.hn"
+  },
+  "Partnero": {
+    "cats": [
+      71
+    ],
+    "description": "Partnero is a partnership management platform designed for relationship-building.",
+    "icon": "Partnero.svg",
+    "pricing": [
+      "mid",
+      "recurring"
+    ],
+    "saas": true,
+    "scriptSrc": "\\.partnero\\.com/",
+    "website": "https://www.partnero.com"
   },
   "Parttrap ONE": {
     "cats": [
@@ -1022,6 +1055,23 @@
     "scriptSrc": "\\.pepperjam\\.com/",
     "website": "https://www.pepperjam.com"
   },
+  "Peraichi": {
+    "cats": [
+      51
+    ],
+    "description": "Peraichi is a software company that develops website creation tools and user support systems necessary for businesses.",
+    "icon": "Peraichi.svg",
+    "js": {
+      "Peraichi": ""
+    },
+    "pricing": [
+      "low",
+      "freemium",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://peraichi.com"
+  },
   "Percona": {
     "cats": [
       34
@@ -1492,8 +1542,8 @@
     "cats": [
       76
     ],
-    "description": "Piano is a enterprise SaaS company which specializing in advanced media business processes and ecommerce optimisation.",
-    "icon": "Piano.png",
+    "description": "Piano is a enterprise SaaS company which specialising in advanced media business processes and ecommerce optimisation.",
+    "icon": "Piano.svg",
     "js": {
       "PianoESPConfig": "",
       "gciDataPiano": ""
@@ -1507,6 +1557,21 @@
       "\\.piano\\.io"
     ],
     "website": "https://piano.io"
+  },
+  "Piano Analytics": {
+    "cats": [
+      10
+    ],
+    "description": "Piano Analytics is a data integration platform that consolidates marketing analytics, product analytics, content analytics, transaction data, and first-party data to offer a centralised source for reporting and segmentation.",
+    "icon": "Piano.svg",
+    "js": {
+      "pianoAnalytics": ""
+    },
+    "pricing": [
+      "poa"
+    ],
+    "saas": true,
+    "website": "https://piano.io/product/analytics/"
   },
   "PickyStory": {
     "cats": [
@@ -1672,12 +1737,34 @@
     },
     "website": "https://www.pingoteam.ir/"
   },
+  "Pinia": {
+    "cats": [
+      59
+    ],
+    "description": "Pinia is a state management library for Vue.js.",
+    "dom": {
+      "script": {
+        "text": "\"pinia\""
+      }
+    },
+    "icon": "Pinia.svg",
+    "js": {
+      "Pinia.createPinia": "",
+      "__NUXT__.pinia": "",
+      "mount_pinia": "",
+      "pinia.state": ""
+    },
+    "oss": true,
+    "requires": "Vue.js",
+    "scriptSrc": "/pinia/.+\\.js",
+    "website": "https://pinia.vuejs.org"
+  },
   "PinnacleCart": {
     "cats": [
       6
     ],
     "description": "PinnacleCart is an ecommerce platform.",
-    "icon": "PinnacleCart.png",
+    "icon": "PinnacleCart.svg",
     "js": {
       "USER_DELETE_ADDRESS": "^DeleteShippingAddress$\\;confidence:49",
       "USER_DELETE_PAYMENT_PROFILE": "^DeletePaymentProfile$\\;confidence:49"
@@ -2005,6 +2092,20 @@
     "saas": true,
     "scriptSrc": "//platincdn\\.com/",
     "website": "https://www.platinmarket.com"
+  },
+  "Platter": {
+    "cats": [
+      108
+    ],
+    "description": "Platter is a platform that provides integrated themes and apps for Shopify stores, allowing for efficient customization.",
+    "dom": "link[href*='/platter.css']",
+    "icon": "Platter.svg",
+    "pricing": [
+      "poa"
+    ],
+    "requires": "Shopify",
+    "saas": true,
+    "website": "https://www.platter.co"
   },
   "Plausible": {
     "cats": [
@@ -3305,6 +3406,26 @@
     "saas": true,
     "website": "https://proxmox.com/en/proxmox-ve"
   },
+  "Ptengine": {
+    "cats": [
+      74,
+      76,
+      10
+    ],
+    "description": "Ptengine is a web analytics tool that offers heat mapping, session replays, and other insights to help businesses understand and optimize user behavior on their websites.",
+    "icon": "Ptengine.svg",
+    "js": {
+      "ptengine": ""
+    },
+    "pricing": [
+      "freemium",
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "scriptSrc": "js\\.ptengine\\.(?:jp|cn|com)?/'",
+    "website": "https://www.ptengine.com"
+  },
   "Pterodactyl Panel": {
     "cats": [
       9
@@ -3578,6 +3699,21 @@
     "scriptSrc": "//pushpay\\.com/",
     "website": "https://pushpay.com"
   },
+  "PyData Sphinx Theme": {
+    "cats": [
+      19
+    ],
+    "description": "PyData Sphinx Theme is a styling template for Sphinx documentation tailored to PyData projects.",
+    "dom": {
+      "p.theme-version": {
+        "text": "([\\d]+(?:\\.[\\d]+)*)\\;version:\\1"
+      }
+    },
+    "icon": "PyData Sphinx Theme.svg",
+    "oss": true,
+    "requires": "Sphinx",
+    "website": "https://pydata-sphinx-theme.readthedocs.io/"
+  },
   "PyScript": {
     "cats": [
       19
@@ -3642,6 +3778,19 @@
     "saas": false,
     "website": "https://www.pythonanywhere.com"
   },
+  "p5.js": {
+    "cats": [
+      59
+    ],
+    "description": "p5.js is a JavaScript library for creative coding, with a focus on making coding accessible and inclusive for artists, designers, educators, beginners, and anyone else.",
+    "icon": "p5.js.svg",
+    "js": {
+      "p5.Camera": "",
+      "p5.ColorConversion": ""
+    },
+    "oss": true,
+    "website": "https://p5js.org"
+  },
   "papaya CMS": {
     "cats": [
       1
@@ -3655,6 +3804,8 @@
     "cats": [
       19
     ],
+    "cpe": "cpe:2.3:a:parceljs:parcel:*:*:*:*:*:*:*:*",
+    "description": "Parcel is an open-source web application bundler known for its zero-config approach, simplifying the process of building and bundling web projects.",
     "icon": "Parcel.png",
     "implies": [
       "SWC"
@@ -3662,7 +3813,8 @@
     "js": {
       "parcelRequire": ""
     },
-    "website": "https://parceljs.org/"
+    "oss": true,
+    "website": "https://parceljs.org"
   },
   "particles.js": {
     "cats": [

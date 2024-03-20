@@ -306,11 +306,21 @@
       6
     ],
     "description": "Haravan is a multi-channel ecommerce services provider from Vietnam.",
+    "excludes": [
+      "PrestaShop",
+      "Shopify"
+    ],
     "icon": "Haravan.svg",
     "js": {
-      "Haravan": ""
+      "Haravan.shop": "",
+      "HaravanAnalytics.meta": "",
+      "hrvBeacon.host": "stats\\.hstatic\\.net"
     },
-    "scriptSrc": "haravan.*\\.js",
+    "pricing": [
+      "low",
+      "recurring"
+    ],
+    "saas": true,
     "website": "https://www.haravan.com"
   },
   "Harbor": {
@@ -373,6 +383,23 @@
     ],
     "icon": "Haskell.png",
     "website": "https://wiki.haskell.org/Haskell"
+  },
+  "Hasura": {
+    "cats": [
+      19
+    ],
+    "cpe": "cpe:2.3:a:hasura:graphql_engine:*:*:*:*:*:*:*:*",
+    "description": "Hasura is an open-source engine that enables developers to effortlessly create real-time GraphQL APIs by auto-generating them from existing database schemas.",
+    "icon": "Hasura.svg",
+    "implies": "GraphQL",
+    "oss": true,
+    "pricing": [
+      "freemium",
+      "payg",
+      "poa"
+    ],
+    "scriptSrc": "\\.hasura\\.io/",
+    "website": "https://hasura.io"
   },
   "Hatena Blog": {
     "cats": [
@@ -984,6 +1011,24 @@
       "/history(@|/)([\\d.]+)(?:/[a-z]+)?/history(?:(.production|.development))?(?:.min)?\\.js\\;version:\\2"
     ],
     "website": "https://github.com/ReactTraining/history"
+  },
+  "Hocalwire": {
+    "cats": [
+      1
+    ],
+    "description": "Hocalwire is a simplified newsroom CMS platform focused on Digital Media Publishers.",
+    "dom": "link[href*='//hocalwire.com']",
+    "icon": "Hocalwire.png",
+    "js": {
+      "Hocalwire": "",
+      "hocalApiEndPoints": ""
+    },
+    "pricing": [
+      "high",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://www.hocalwire.com"
   },
   "HockeyStack": {
     "cats": [

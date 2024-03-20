@@ -217,6 +217,11 @@
         "attributes": {
           "href": "cdn\\.jsdelivr\\.net/npm/vant@([\\d\\.]+)/\\;version:\\1"
         }
+      },
+      "link[href*='/vant-']": {
+        "attributes": {
+          "href": "/vant-[\\w\\d]{8}\\.js"
+        }
       }
     },
     "icon": "Vant.png",
@@ -303,7 +308,7 @@
       6
     ],
     "description": "Vendre is a module-based ecommerce system where you choose which functions your organisation needs.",
-    "icon": "Vendre.png",
+    "icon": "Vendre.svg",
     "js": {
       "VendreMap.maps_loaded": "",
       "vendre_config": ""
@@ -314,6 +319,26 @@
     ],
     "saas": true,
     "website": "https://vendre.io"
+  },
+  "Venly": {
+    "cats": [
+      19
+    ],
+    "description": "Venly is a blockchain technology provider creating products to help companies succeed in Web3.",
+    "icon": "Venly.svg",
+    "js": {
+      "VenlyConnect": ""
+    },
+    "meta": {
+      "application-name": "^Venly$"
+    },
+    "pricing": [
+      "freemium",
+      "mid",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://www.venly.io"
   },
   "Venmo": {
     "cats": [
@@ -1141,15 +1166,19 @@
     "scriptSrc": "\\.opentok\\.com/",
     "website": "https://www.vonage.com/communications-apis/video/"
   },
-  "Voog.com Website Builder": {
+  "Voog": {
     "cats": [
-      1,
-      6
+      51
     ],
-    "html": "<script [^>]*src=\"[^\"]*voog\\.com/tracker\\.js",
-    "icon": "Voog.png",
-    "scriptSrc": "voog\\.com/tracker\\.js",
-    "website": "https://www.voog.com/"
+    "description": "Voog is a user-friendly website building platform.",
+    "icon": "Voog.svg",
+    "pricing": [
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "scriptSrc": "\\.voog\\.com/",
+    "website": "https://www.voog.com"
   },
   "Voracio": {
     "cats": [
@@ -1169,6 +1198,15 @@
     ],
     "saas": true,
     "website": "https://www.voracio.co.uk"
+  },
+  "Vouchley": {
+    "cats": [
+      90
+    ],
+    "description": "Vouchley is a review platform designed for freelancers, allowing them to receive and showcase client reviews to build credibility and attract more business.",
+    "dom": "iframe[src*='.reputize.org/widgets/']",
+    "icon": "Vouchley.svg",
+    "website": "https://www.vouchley.com"
   },
   "Vtiger": {
     "cats": [
@@ -1242,7 +1280,7 @@
     ],
     "css": "\\.vue-notification-group",
     "description": "Vue.js is an open-source model–view–viewmodel JavaScript framework for building user interfaces and single-page applications.",
-    "dom": ".vue-app",
+    "dom": ".vue-app, link[href*='docsify/themes/vue.css']",
     "html": "<[^>]+\\sdata-v(?:ue)?-",
     "icon": "vue.svg",
     "js": {

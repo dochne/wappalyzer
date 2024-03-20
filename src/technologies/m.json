@@ -230,7 +230,7 @@
     ],
     "css": "\\.MuiPaper-root",
     "description": "MUI(formerly Material UI) is a simple and customisable component library to build faster, beautiful, and more accessible React applications.",
-    "dom": "style[data-meta='MuiPaper'], div.MuiBox-root, div.MuiPaper-root, style[data-meta='MuiButton']",
+    "dom": "style[data-meta='MuiPaper'], div.MuiBox-root, div.MuiPaper-root, style[data-meta='MuiButton'], input.MuiInputBase-input",
     "icon": "MUI.svg",
     "implies": "React",
     "oss": true,
@@ -412,6 +412,26 @@
     "saas": true,
     "scriptSrc": "acc\\.magixite\\.com/",
     "website": "https://acc.magixite.com"
+  },
+  "Magnolia CMS": {
+    "cats": [
+      1
+    ],
+    "cpe": "cpe:2.3:a:magnolia-cms:magnolia_cms:*:*:*:*:*:*:*:*",
+    "description": "Magnolia CMS is a Java-based, open-source content management system that employs a modular architecture and JCR (Java Content Repository) standards, facilitating the creation, storage, and retrieval of digital content within a customisable framework.",
+    "headers": {
+      "x-magnolia-registration": ""
+    },
+    "icon": "Magnolia CMS.svg",
+    "implies": "Java",
+    "oss": true,
+    "pricing": [
+      "freemium",
+      "high",
+      "recurring",
+      "poa"
+    ],
+    "website": "https://www.magnolia-cms.com"
   },
   "MailChimp": {
     "cats": [
@@ -686,7 +706,7 @@
       66
     ],
     "description": "Mantine is an open-source UI framework and component library for React.",
-    "dom": "style[data-emotion='mantine-global'], style[data-emotion='mantine']",
+    "dom": "style[data-emotion='mantine-global'], style[data-emotion='mantine'], html[data-mantine-color-scheme]",
     "icon": "Mantine.svg",
     "implies": "TypeScript",
     "oss": true,
@@ -1464,6 +1484,24 @@
     },
     "website": "https://www.melistechnology.com/"
   },
+  "MemberSpace": {
+    "cats": [
+      19,
+      41
+    ],
+    "description": "MemberSpace is a cloud-based membership solution, which allows users to provide role-based access to content.",
+    "icon": "MemberSpace.svg",
+    "js": {
+      "MemberSpace": "",
+      "MemberSpaceParams": ""
+    },
+    "pricing": [
+      "payg",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://www.memberspace.com"
+  },
   "MemberStack": {
     "cats": [
       1
@@ -2134,6 +2172,16 @@
       "application-name": "Misskey"
     },
     "website": "https://join.misskey.page/"
+  },
+  "Mithril.js": {
+    "cats": [
+      12
+    ],
+    "description": "Mithril.js is a lightweight JavaScript framework for building efficient and declarative single-page applications (SPAs).",
+    "icon": "Mithril.js.svg",
+    "oss": true,
+    "scriptSrc": "/mithril(?:\\.min)?\\.js",
+    "website": "https://mithril.js.org"
   },
   "Mittwald": {
     "cats": [
@@ -2824,6 +2872,23 @@
     },
     "url": "/mozard/!suite",
     "website": "https://mozard.nl"
+  },
+  "MudBlazor": {
+    "cats": [
+      66
+    ],
+    "description": "MudBlazor is a component library for Blazor implementing Material Design.",
+    "dom": "link[href*='/MudBlazor.min.css']",
+    "icon": "Mudblazor.svg",
+    "implies": "Blazor",
+    "js": {
+      "mudWindow": ""
+    },
+    "oss": true,
+    "scriptSrc": [
+      "_content/MudBlazor/MudBlazor\\.min\\.js"
+    ],
+    "website": "https://mudblazor.com/"
   },
   "Mulberry": {
     "cats": [

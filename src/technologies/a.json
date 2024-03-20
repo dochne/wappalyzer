@@ -144,6 +144,22 @@
     "scriptSrc": "/wp-content/themes/covernews(?:-pro)?/",
     "website": "https://afthemes.com/products/covernews"
   },
+  "AIMEOS": {
+    "cats": [
+      6
+    ],
+    "description": "Aimeos is a PHP ecommerce framework designed for custom online shops, multi-vendor marketplaces, and complex B2B applications.",
+    "dom": "link[href*='aimeos.com']",
+    "icon": "aimeos.png",
+    "js": {
+      "Aimeos": "",
+      "AimeosAccountFavorite": "",
+      "AimeosBasketMini": "",
+      "AimeosCatalog": ""
+    },
+    "oss": true,
+    "website": "https://aimeos.org"
+  },
   "ALL-INKL": {
     "cats": [
       88
@@ -186,6 +202,25 @@
     },
     "requires": "WordPress",
     "website": "https://amp-wp.org"
+  },
+  "ANDCommerce": {
+    "cats": [
+      6
+    ],
+    "description": "ANDCommerce is an all-in-one ecommerce platform from Brasil.",
+    "dom": "link[href*='/css/andcommerce.css']",
+    "icon": "ANDCommerce.png",
+    "implies": [
+      "PHP",
+      "MySQL"
+    ],
+    "pricing": [
+      "mid",
+      "recurring"
+    ],
+    "requires": "Cart Functionality",
+    "saas": true,
+    "website": "https://www.andcommerce.com.br"
   },
   "AOLserver": {
     "cats": [
@@ -1038,6 +1073,7 @@
     ],
     "saas": true,
     "scriptSrc": "(?:a|s)\\.adroll\\.com",
+    "scripts": "(?:d|s)\\.adroll\\.com/",
     "website": "https://adroll.com"
   },
   "AdRoll CMP System": {
@@ -1187,13 +1223,16 @@
       72
     ],
     "description": "AddEvent is used to Add to Calendar and event tools for websites and newsletters.",
-    "icon": "addevent.png",
+    "icon": "AddEvent.svg",
+    "js": {
+      "addeventatc": ""
+    },
     "pricing": [
-      "mid",
+      "low",
       "recurring",
-      "poa"
+      "freemium"
     ],
-    "scriptSrc": "//addevent\\.com/",
+    "scriptSrc": "(?://|\\.)addevent\\.com/",
     "website": "https://www.addevent.com"
   },
   "AddShoppers": {
@@ -1600,6 +1639,24 @@
     },
     "website": "https://www.adobe.com/products/golive"
   },
+  "Adobe Muse": {
+    "cats": [
+      57
+    ],
+    "description": "Adobe Muse is a no code offline website builder used to create fixed, fluid, or adaptive websites, without the need to write code.",
+    "icon": "AdobeMuse.svg",
+    "js": {
+      "Muse": "",
+      "museConfigLoadedAndExecuted": "",
+      "muse_init": ""
+    },
+    "pricing": [
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://helpx.adobe.com/muse/kb/adobe-muse-end-of-service.html"
+  },
   "Adobe Portfolio": {
     "cats": [
       51
@@ -1661,8 +1718,10 @@
       "adonis-session": "",
       "adonis-session-values": ""
     },
-    "icon": "AdonisJS.png",
+    "description": "AdonisJS is a Node.js web application framework that follows the MVC pattern, simplifying web development with features like ORM, authentication, and WebSockets.",
+    "icon": "AdonisJS.svg",
     "implies": "Node.js",
+    "oss": true,
     "website": "https://adonisjs.com"
   },
   "Advally": {
@@ -2447,6 +2506,24 @@
     "icon": "Alibaba Cloud.svg",
     "scriptSrc": "cf\\.aliyun\\.com/",
     "website": "https://help.aliyun.com/document_detail/193141.html"
+  },
+  "All in One Accessibility": {
+    "cats": [
+      68
+    ],
+    "description": "All in One Accessibility is a website accessibility widget developed by Skynet Technologies to enhance compliance with WCAG 2.0, 2.1, 2.2, and ADA accessibility standards.",
+    "icon": "Skynet Technologies.svg",
+    "js": {
+      "aiao_modal_footer_height": "",
+      "aioa_accessibility_profiles_STATUS": ""
+    },
+    "pricing": [
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "scriptSrc": "\\.skynettechnologies\\.com/accessibility/",
+    "website": "https://www.skynettechnologies.com/all-in-one-accessibility"
   },
   "All in One SEO Pack": {
     "cats": [
@@ -3891,6 +3968,23 @@
     "scriptSrc": "cdn\\.esales\\.apptus\\.com.+(?:apptus-esales-api-([\\d.]+))\\.min\\.js\\;version:\\1",
     "website": "https://www.apptus.com"
   },
+  "Appwrite": {
+    "cats": [
+      47
+    ],
+    "cpe": "cpe:2.3:a:appwrite:appwrite:*:*:*:*:*:*:*:*",
+    "description": "Appwrite is an end-to-end backend server for web, mobile or native applications packaged as a set of Docker microservices.",
+    "icon": "Appwrite.svg",
+    "oss": true,
+    "pricing": [
+      "low",
+      "recurring",
+      "freemium"
+    ],
+    "saas": true,
+    "website": "https://appwrite.io",
+    "xhr": "cloud\\.appwrite\\.io"
+  },
   "Aprimo": {
     "cats": [
       95
@@ -3898,6 +3992,9 @@
     "description": "Aprimo is a United States-based company that develops and sells marketing automation software and digital asset management technology.",
     "dom": "source[data-srcset*='/media/aprimo'], img[data-src*='/media/Aprimo'], img[src*='aprimo']",
     "icon": "Aprimo.png",
+    "js": {
+      "Aprimo": ""
+    },
     "pricing": [
       "poa"
     ],
@@ -4005,6 +4102,17 @@
       "basemaps\\.arcgis\\.com"
     ],
     "website": "https://developers.arcgis.com/javascript/"
+  },
+  "Arco Design Vue": {
+    "cats": [
+      66
+    ],
+    "description": "Arco Design is a set of open-source UI Components for Vue, aiming to address experience issues in products.",
+    "dom": "link[href*='arcodesign'], link[href*='arco-design'], body[arco-theme]",
+    "icon": "ArcoDesign.svg",
+    "implies": "Vue.js",
+    "oss": true,
+    "website": "https://arco.design"
   },
   "Arena": {
     "cats": [
@@ -4213,7 +4321,6 @@
     ],
     "description": "Assertive Yield is a SaaS company that specialises in helping SSPs (Supply-Side Platforms), publishers, and ad networks optimise their advertising revenue through real-time attribution and yield optimisation strategies.",
     "icon": "Assertive Yield.svg",
-    "saas": true,
     "js": {
       "assertive.predict": ""
     },
@@ -4221,6 +4328,7 @@
       "payg",
       "poa"
     ],
+    "saas": true,
     "website": "https://www.assertiveyield.com"
   },
   "Astra": {
@@ -4671,8 +4779,8 @@
       87
     ],
     "description": "Automatic.css is a CSS framework for WordPress page builders.",
-    "icon": "Automatic.css.png",
     "dom": "link[href*='/wp-content/uploads/automatic-css/']",
+    "icon": "Automatic.css.png",
     "pricing": [
       "low",
       "recurring"

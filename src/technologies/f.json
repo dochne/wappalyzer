@@ -471,6 +471,21 @@
     "saas": true,
     "website": "https://featherx.ai"
   },
+  "Featurebase": {
+    "cats": [
+      85
+    ],
+    "description": "Featurebase is feature management software designed to collect, organise, and analyse product feedback, empowering teams to make data-driven decisions for building products that align with customer preferences.",
+    "dom": "meta[http-equiv*='Content-Security-Policy'][content*='//featurebase.app']",
+    "icon": "Featurebase.svg",
+    "pricing": [
+      "freemium",
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://www.featurebase.app"
+  },
   "FedEx": {
     "cats": [
       99
@@ -881,8 +896,8 @@
       18,
       22
     ],
-    "description": "Flask is a Python micro web framework ideal for rapidly constructing web applications, offering minimalism, flexibility, and modularity.",
     "cpe": "cpe:2.3:a:palletsprojects:flask:*:*:*:*:*:*:*:*",
+    "description": "Flask is a Python micro web framework ideal for rapidly constructing web applications, offering minimalism, flexibility, and modularity.",
     "headers": {
       "Server": "Werkzeug/?([\\d\\.]+)?\\;version:\\1"
     },
@@ -1033,6 +1048,24 @@
     "saas": true,
     "scriptSrc": "\\.flocktory\\.com/",
     "website": "https://www.flocktory.com"
+  },
+  "Flourish": {
+    "cats": [
+      25
+    ],
+    "description": "Flourish is a data visualisation and storytelling platform that enables users to create interactive data visualisations, charts, and presentations.",
+    "icon": "Flourish.png",
+    "js": {
+      "Flourish.environment": "",
+      "FlourishConfig": "",
+      "FlourishLoaded": "",
+      "_Flourish_template_id": ""
+    },
+    "pricing": [
+      "freemium",
+      "poa"
+    ],
+    "website": "https://flourish.studio"
   },
   "Flow": {
     "cats": [
@@ -1886,7 +1919,8 @@
     "dom": [
       "style[id='__FRSH_TWIND']",
       "style[id='__FRSH_STYLE']",
-      "script[id='__FRSH_STATE']"
+      "script[id='__FRSH_STATE']",
+      "link[href*='?__frsh_c=']"
     ],
     "icon": "Fresh.svg",
     "implies": [
@@ -2119,6 +2153,9 @@
     ],
     "description": "Frontify is a cloud-based brand management platform for creators and collaborators of brands.",
     "dom": "a[href*='.frontify.com/'], img[src*='.frontify.com/'], link[href*='.frontify.com/']",
+    "headers": {
+      "server": "^frontify$"
+    },
     "icon": "Frontify.svg",
     "pricing": [
       "poa"
@@ -2283,6 +2320,28 @@
     "saas": true,
     "scriptSrc": "\\.funnelcockpit\\.com/",
     "website": "https://funnelcockpit.com"
+  },
+  "Funnelforms": {
+    "cats": [
+      87,
+      110
+    ],
+    "description": "Funnelforms is a WordPress plugin for creating intelligent multi-step forms, integrating AI to streamline business processes, enhance customer acquisition, and optimise staff recruitment.",
+    "dom": {
+      "link[href*='/wp-content/plugins/Funnelforms']": {
+        "attributes": {
+          "href": "/wp-content/plugins/Funnelforms(?:-pro)?/.+\\.css(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+        }
+      }
+    },
+    "icon": "Funnelforms.png",
+    "pricing": [
+      "low",
+      "recurring"
+    ],
+    "requires": "WordPress",
+    "saas": true,
+    "website": "https://en.funnelforms.io"
   },
   "Funnelish": {
     "cats": [

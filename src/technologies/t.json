@@ -630,6 +630,19 @@
     ],
     "website": "https://tanglednetwork.com"
   },
+  "Tap Payments": {
+    "cats": [
+      41
+    ],
+    "description": "Tap Payments is a company based in KSA provides payment services to merchants.",
+    "dom": "iframe[src*='checkout.payments.tap.company/']",
+    "icon": "Tap Payments.svg",
+    "pricing": [
+      "payg"
+    ],
+    "saas": true,
+    "website": "https://www.tap.company"
+  },
   "Tapad": {
     "cats": [
       36
@@ -759,7 +772,9 @@
     "description": "Tealium provides a sales enterprise tag management system and marketing software.",
     "icon": "Tealium.png",
     "js": {
-      "TEALIUMENABLED": ""
+      "TEALIUMENABLED": "",
+      "TealiumUtils": "",
+      "__tealium_twc_switch": ""
     },
     "pricing": [
       "mid",
@@ -770,6 +785,7 @@
       "^(?:https?:)?//tags\\.tiqcdn\\.com/",
       "/tealium/utag\\.js$"
     ],
+    "scripts": "tealium_js_path",
     "website": "https://tealium.com"
   },
   "Tealium AudienceStream": {
@@ -832,6 +848,30 @@
       "application-name": "TeamCity"
     },
     "website": "https://www.jetbrains.com/teamcity/"
+  },
+  "TeamSystem Commerce": {
+    "cats": [
+      6
+    ],
+    "headers": {
+      "X-Powered-By": "(?:Storeden|TeamSystem Commerce)"
+    },
+    "icon": "storeden.svg",
+    "website": "https://www.teamsystemcommerce.com/"
+  },
+  "TeamUp": {
+    "cats": [
+      72
+    ],
+    "description": "TeamUp is fitness management software catering to boutique gyms, studios, and fitness boxes worldwide.",
+    "dom": "a[href*='//goteamup.com/']",
+    "icon": "TeamUp.svg",
+    "pricing": [
+      "mid",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://goteamup.com"
   },
   "Teamtailor": {
     "cats": [
@@ -1157,6 +1197,19 @@
     "saas": true,
     "scriptSrc": "the-dotcom-public-cdn\\.s3\\.amazonaws\\.com/",
     "website": "https://www.the.com"
+  },
+  "Theatre.js": {
+    "cats": [
+      25
+    ],
+    "description": "Theatre.js is a javascript animation library with a professional motion design toolset.",
+    "icon": "Theatre.js.svg",
+    "js": {
+      "__TheatreJS_CoreBundle": "",
+      "__TheatreJS_CoreBundle.version": "([\\d\\.]+)\\;version:\\1"
+    },
+    "oss": true,
+    "website": "https://www.theatrejs.com"
   },
   "Thefork": {
     "cats": [
@@ -1966,10 +2019,13 @@
     "cats": [
       6
     ],
+    "description": "Ticimax provides ecommerce infrastructure services.",
     "icon": "Ticimax.png",
-    "scriptSrc": [
-      "cdn\\.ticimax\\.com/"
-    ],
+    "js": {
+      "ticimaxApi": "",
+      "ticimaxServices": ""
+    },
+    "scriptSrc": "cdn\\.ticimax\\.(?:com|cloud)/",
     "website": "https://www.ticimax.com"
   },
   "Tictail": {
@@ -2413,6 +2469,24 @@
     "icon": "Trac.png",
     "implies": "Python",
     "website": "https://trac.edgewall.org"
+  },
+  "Track123": {
+    "cats": [
+      100,
+      99
+    ],
+    "description": "Track123 is a product under Lingxing, founded in September 2021, with a focus on providing all-in-one tracking and management services for cross-border sellers.",
+    "icon": "Track123.svg",
+    "js": {
+      "track123": ""
+    },
+    "pricing": [
+      "freemium",
+      "payg"
+    ],
+    "requires": "Shopify",
+    "saas": true,
+    "website": "https://www.track123.com"
   },
   "TrackJs": {
     "cats": [
@@ -3362,7 +3436,8 @@
     "dom": "iframe[src*='player\\.twitch\\.tv']",
     "icon": "Twitch.svg",
     "js": {
-      "Twitch.Player": ""
+      "Twitch.Embed": "",
+      "twitchPlayer": ""
     },
     "website": "https://dev.twitch.tv/docs/embed/video-and-clips/"
   },
@@ -3523,6 +3598,15 @@
     ],
     "scriptSrc": "use\\.typekit\\.com",
     "website": "https://typekit.com"
+  },
+  "Typer.js": {
+    "cats": [
+      59
+    ],
+    "description": "Typer.js is a JavaScript library for creating a fully configurable typing effect in HTML.",
+    "oss": true,
+    "scriptSrc": "unpkg\\.com/typer-dot-js@([\\d\\.]+)/typer\\.js\\;version:\\1",
+    "website": "https://github.com/straversi/Typer.js"
   },
   "Typof": {
     "cats": [

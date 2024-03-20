@@ -178,6 +178,23 @@
     },
     "website": "https://www.zen-cart.com"
   },
+  "Zen Planner": {
+    "cats": [
+      72
+    ],
+    "description": "Zen Planner is a software platform designed for fitness and wellness businesses, offering features such as membership management, class scheduling, and billing automation.",
+    "icon": "Zen Planner.svg",
+    "js": {
+      "zenplanner": ""
+    },
+    "pricing": [
+      "mid",
+      "recurring"
+    ],
+    "saas": true,
+    "scriptSrc": "\\.zenplanner\\.com/",
+    "website": "https://zenplanner.com"
+  },
   "Zend": {
     "cats": [
       22
@@ -269,7 +286,7 @@
     ],
     "description": "Zeotap is a customer intelligence platform that helps brands better understand their customers and predict behaviors.",
     "dom": "link[href*='.zeotap.com']",
-    "icon": "Zeotap.png",
+    "icon": "Zeotap.svg",
     "pricing": [
       "poa"
     ],
@@ -482,6 +499,22 @@
     "icon": "Zipkin.png",
     "website": "https://zipkin.io/"
   },
+  "Zipteams": {
+    "cats": [
+      52
+    ],
+    "description": "Zipteams is a live chat solution.",
+    "icon": "Zipteams.png",
+    "js": {
+      "ZipteamsWidget": ""
+    },
+    "pricing": [
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://zipteams.com"
+  },
   "Zmags Creator": {
     "cats": [
       95
@@ -550,6 +583,22 @@
     "saas": true,
     "website": "https://www.zoho.com/"
   },
+  "Zoho Commerce": {
+    "cats": [
+      6
+    ],
+    "description": "Zoho Commerce is a cloud-based ecommerce platform by Zoho Corporation, facilitating online store creation and management.",
+    "icon": "Zoho Commerce.svg",
+    "meta": {
+      "generator": "^Zoho Commerce"
+    },
+    "pricing": [
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://www.zoho.com/commerce/"
+  },
   "Zoho Mail": {
     "cats": [
       75
@@ -589,7 +638,7 @@
       52
     ],
     "description": "Zoko is an all-in-one system that leverages the WhatsApp API to help you do business, on WhatsApp",
-    "icon": "Zoko.png",
+    "icon": "Zoko.svg",
     "implies": [
       "WhatsApp Business Chat"
     ],
@@ -604,6 +653,18 @@
     "saas": true,
     "scriptSrc": "zoko-shopify-prod\\.web\\.app",
     "website": "https://www.zoko.io/"
+  },
+  "Zola": {
+    "cats": [
+      57
+    ],
+    "description": "Zola is a static site engine that consolidates essential features in a single binary.",
+    "icon": "Zola.png",
+    "meta": {
+      "generator": "^Zola(?:\\s[\\d\\.]+)?$"
+    },
+    "oss": true,
+    "website": "https://www.getzola.org/"
   },
   "Zone.js": {
     "cats": [

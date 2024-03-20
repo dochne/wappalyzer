@@ -35,7 +35,7 @@
     "cats": [
       20
     ],
-    "description": "WEBDEV is a tool to develop internet and intranet sites and applications that support data and processes",
+    "description": "WEBDEV is a tool to develop internet and intranet sites and applications that support data and processes.",
     "headers": {
       "WebDevSrc": ""
     },
@@ -137,6 +137,25 @@
     "scriptSrc": "/wp-content/plugins/wp-automatic/",
     "website": "https://wpautomatic.com"
   },
+  "WP Courseware": {
+    "cats": [
+      87,
+      21
+    ],
+    "description": "WP Courseware is an LMS plugin that allows novice and professional users to build online courses using its easy-to-use drag and drop course builder.",
+    "icon": "WP Courseware.svg",
+    "js": {
+      "wpcw_course_note_params.api_url": "/wp-json/wpcw/"
+    },
+    "pricing": [
+      "low",
+      "recurring"
+    ],
+    "requires": "WordPress",
+    "saas": true,
+    "scriptSrc": "/wp-content/plugins/wp-courseware/.+frontend\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1",
+    "website": "https://flyplugins.com/wp-courseware-wordpress-lms"
+  },
   "WP Engine": {
     "cats": [
       62,
@@ -182,13 +201,28 @@
     "scriptSrc": "/wpFeatherlight\\.pkgd\\.min\\.js",
     "website": "https://wordpress.org/plugins/wp-featherlight"
   },
+  "WP Google Map Embed": {
+    "cats": [
+      87
+    ],
+    "description": "WP Google Map Embed is a lightweight WordPress plugin for embedding Google Maps with custom markers via shortcodes in posts, pages, and sidebars.",
+    "dom": "link#wp-gmap-embed-front-css-css",
+    "icon": "WP Google Map Embed.png",
+    "implies": "Google Maps",
+    "pricing": [
+      "freemium",
+      "onetime"
+    ],
+    "requires": "WordPress",
+    "website": "https://wpgooglemap.com"
+  },
   "WP Google Map Plugin": {
     "cats": [
-      87,
-      35
+      87
     ],
     "description": "WP Google Map Plugin allows you to create google maps shortcodes to display responsive google maps on pages, widgets and custom templates.",
     "icon": "WP Google Map Plugin.png",
+    "implies": "Google Maps",
     "js": {
       "wpgmp_local": ""
     },
@@ -922,14 +956,31 @@
   },
   "WebSite X5": {
     "cats": [
-      20
+      1,
+      51
     ],
     "description": "WebSite X5 is a tools to create and publish websites.",
     "icon": "WebSite X5.png",
     "meta": {
       "generator": "Incomedia WebSite X5 (\\w+ [\\d.]+)\\;version:\\1"
     },
+    "pricing": [
+      "low",
+      "recurring"
+    ],
+    "saas": true,
     "website": "https://websitex5.com"
+  },
+  "WebSocket": {
+    "cats": [
+      19
+    ],
+    "description": "WebSocket is a communication protocol that provides full-duplex communication channels over a single, long-lived connection, enabling interactive communication between web browsers and servers.",
+    "dom": "link[rel='web-socket']",
+    "html": "<(?:link|a)[^>]+href=[\"']wss?://",
+    "icon": "WebSocket.svg",
+    "oss": true,
+    "website": "https://en.wikipedia.org/wiki/WebSocket"
   },
   "WebToffee Stripe Payment Plugin for WooCommerce": {
     "cats": [
@@ -949,6 +1000,24 @@
     "requires": "WordPress",
     "saas": true,
     "website": "https://www.webtoffee.com/product/woocommerce-stripe-payment-gateway/"
+  },
+  "WebWave": {
+    "cats": [
+      51
+    ],
+    "description": "WebWave is a drag and drop website builder.",
+    "icon": "WebWave.svg",
+    "js": {
+      "webwave.getAppVersion": "",
+      "webwaveFontsLoadedFlag": ""
+    },
+    "pricing": [
+      "freemium",
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://webwavecms.com"
   },
   "WebZi": {
     "cats": [
@@ -1165,6 +1234,7 @@
       "webpackChunk": "",
       "webpackJsonp": ""
     },
+    "oss": true,
     "website": "https://webpack.js.org/"
   },
   "Webpushr": {
@@ -1265,17 +1335,6 @@
     "saas": true,
     "website": "https://www.websitebuilder.com"
   },
-  "Websocket": {
-    "cats": [
-      19
-    ],
-    "html": [
-      "<link[^>]+rel=[\"']web-socket[\"']",
-      "<(?:link|a)[^>]+href=[\"']wss?://"
-    ],
-    "icon": "websocket.png",
-    "website": "https://en.wikipedia.org/wiki/WebSocket"
-  },
   "Webtrends": {
     "cats": [
       10
@@ -1301,6 +1360,24 @@
     ],
     "saas": true,
     "website": "https://www.webx.pk"
+  },
+  "Webyn": {
+    "cats": [
+      76
+    ],
+    "description": "Webyn is a SaaS platform employing AI to analyse website traffic and implement automated, personalised enhancements aimed at improving user experience and potentially increasing conversions for clients.",
+    "dom": "link[href*='files.webyn.ai']",
+    "icon": "Webyn.png",
+    "js": {
+      "WebynInstance": ""
+    },
+    "pricing": [
+      "high",
+      "recurring"
+    ],
+    "saas": true,
+    "scriptSrc": "files\\.webyn\\.ai/",
+    "website": "https://www.webyn.ai"
   },
   "Webzie": {
     "cats": [
@@ -1346,10 +1423,17 @@
     "cats": [
       89
     ],
+    "description": "Weglot is a website translation solution facilitating automatic and manual multilingual content management for website owners and developers.",
     "headers": {
       "Weglot-Translated": ""
     },
-    "icon": "Weglot.png",
+    "icon": "Weglot.svg",
+    "pricing": [
+      "freemium",
+      "recurring",
+      "low"
+    ],
+    "saas": true,
     "scriptSrc": [
       "cdn\\.weglot\\.com",
       "wp-content/plugins/weglot"
@@ -1415,8 +1499,11 @@
       52
     ],
     "description": "WhatsApp Business is a free to download app available on Android and iPhone using which businesses can connect with their customers.",
-    "dom": "a[href*='api.whatsapp.com/send'], a[href*='web.whatsapp.com/send'], a[href*='wa.me/'], div[class*='wptwa-container'], a[href*='wa.link'][target='_blank']",
+    "dom": "a[href*='api.whatsapp.com/send'], a[href*='web.whatsapp.com/send'], a[href*='wa.me/'], div[class*='wptwa-container'], a[href*='wa.link'][target='_blank'], link[href*='plugins/creame-whatsapp-me']",
     "icon": "WhatsApp.svg",
+    "scriptSrc": [
+      "/plugins/creame-whatsapp-me.*joinchat\\.min\\.js"
+    ],
     "website": "https://www.whatsapp.com/business"
   },
   "Wheelio": {
@@ -1825,10 +1912,29 @@
     "cats": [
       1
     ],
+    "description": "Wolf CMS is an open-source, lightweight content management system written in PHP.",
     "html": "(?:<a href=\"[^>]+wolfcms\\.org[^>]+>Wolf CMS(?:</a>)? inside|Thank you for using <a[^>]+>Wolf CMS)",
     "icon": "Wolf CMS.png",
     "implies": "PHP",
-    "website": "https://www.wolfcms.org"
+    "oss": true,
+    "website": "https://github.com/wolfcms/wolfcms"
+  },
+  "Wolfeo": {
+    "cats": [
+      32,
+      71
+    ],
+    "cookies": {
+      "wolfeo_new_session_5": ""
+    },
+    "description": "Wolfeo is an online platform for selling digital products and services, catering to coaches, consultants, and entrepreneurs.",
+    "icon": "Wolfeo.png",
+    "pricing": [
+      "mid",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://wolfeo.fr"
   },
   "Woltlab Community Framework": {
     "cats": [
@@ -2092,6 +2198,20 @@
     "oss": true,
     "requires": "WordPress",
     "website": "https://wordpress.org/documentation/article/create-a-network/"
+  },
+  "WordPress Popular Posts": {
+    "cats": [
+      87,
+      5
+    ],
+    "description": "WordPress Popular Posts is a plugin for the WordPress content management system that allows users to display a widget or shortcode featuring a list of the most popular posts on their website based on criteria such as pageviews or comments.",
+    "headers": {
+      "WordPressPopularPosts": ""
+    },
+    "icon": "WordPress Popular Posts.svg",
+    "requires": "WordPress",
+    "scriptSrc": "/wp-content/plugins/wordpress-popular-posts/.+wpp\\.min\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1",
+    "website": "https://wordpress.org/plugins/wordpress-popular-posts/"
   },
   "WordPress Super Cache": {
     "cats": [

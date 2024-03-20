@@ -1168,7 +1168,7 @@
       78
     ],
     "description": "Blue Triangle is a connected view of marketing, web performance, and third-party tag analytics while constantly monitoring website code for security vulnerabilities.",
-    "icon": "Blue Triangle.png",
+    "icon": "Blue Triangle.svg",
     "js": {
       "_bttUtil.version": "([\\d.]+)\\;version:\\1"
     },
@@ -1295,7 +1295,7 @@
     ],
     "description": "Boats Group is a website platform for boat dealers and brokers.",
     "dom": "a[href*='.boatsgroup.com/'][target='_blank']",
-    "icon": "Boats Group.png",
+    "icon": "Boats Group.svg",
     "pricing": [
       "poa"
     ],
@@ -1310,6 +1310,22 @@
     "implies": "Google Analytics",
     "scriptSrc": "boba(?:\\.min)?\\.js",
     "website": "https://boba.space150.com"
+  },
+  "Bobonus": {
+    "cats": [
+      93,
+      6
+    ],
+    "description": "Bobonus is an ecommerce platform for restaurants.",
+    "headers": {
+      "X-Powered-By": "https\\://bobonus\\.com"
+    },
+    "icon": "Bobonus.svg",
+    "pricing": [
+      "poa"
+    ],
+    "saas": true,
+    "website": "https://bobonus.com"
   },
   "BoidCMS": {
     "cats": [
@@ -1346,13 +1362,17 @@
     "icon": "Bokun.svg",
     "js": {
       "BokunWidgetEmbedder": "",
+      "BokunWidgets": "",
+      "__BokunWidgetsLoader": "",
       "__bokunWidgets": "",
       "bokunBookingChannelUUID": "",
+      "bokunPolyfillReady": "",
       "bokunSessionId": ""
     },
     "pricing": [
       "freemium",
-      "payg"
+      "payg",
+      "recurring"
     ],
     "saas": true,
     "website": "https://www.bokun.io"
@@ -1686,6 +1706,24 @@
     "scriptSrc": "online\\.bookvisit\\.com/",
     "website": "https://bookvisit.com"
   },
+  "Bookafy": {
+    "cats": [
+      72
+    ],
+    "description": "Bookafy is a service that offers appointment scheduling and booking solutions for businesses and professionals.",
+    "icon": "Bookafy.png",
+    "js": {
+      "bookafyPopup": "",
+      "openBookafyPopup": ""
+    },
+    "pricing": [
+      "freemium",
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://bookafy.com"
+  },
   "Bookatable": {
     "cats": [
       93
@@ -1877,6 +1915,11 @@
     ],
     "cpe": "cpe:2.3:a:getbootstrap:bootstrap:*:*:*:*:*:*:*:*",
     "description": "Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.",
+    "dom": {
+      "style": {
+        "text": "--bs-(?:gutter|emphasis|space-x|tertiary-bg|secondary-color)"
+      }
+    },
     "html": [
       "<style>\\s+/\\*!\\s+\\* Bootstrap v(\\d\\.\\d\\.\\d)\\;version:\\1",
       "<link[^>]* href=[^>]*?bootstrap(?:[^>]*?([0-9a-fA-F]{7,40}|[\\d]+(?:.[\\d]+(?:.[\\d]+)?)?)|)[^>-]*?(?:\\.min)?\\.css\\;version:\\1"
@@ -1998,6 +2041,21 @@
     "icon": "Botble-CMS.png",
     "implies": "Laravel",
     "website": "https://botble.com"
+  },
+  "Boulevard": {
+    "cats": [
+      72
+    ],
+    "description": "Boulevard is a business management platform tailored to streamline appointment-based operations, specifically designed for the wellness industry.",
+    "dom": "iframe[src*='.boulevard.io']",
+    "icon": "Boulevard.svg",
+    "pricing": [
+      "mid",
+      "recurring"
+    ],
+    "saas": true,
+    "scriptSrc": "\\.joinboulevard\\.com/",
+    "website": "https://www.joinblvd.com"
   },
   "Boutiq": {
     "cats": [
@@ -2146,7 +2204,9 @@
     "icon": "Braze.svg",
     "js": {
       "appboy": "",
-      "appboyQueue": ""
+      "appboyQueue": "",
+      "braze.BrazeSdkMetadata": "",
+      "brazeQueue": ""
     },
     "pricing": [
       "poa"
@@ -2256,6 +2316,18 @@
     ],
     "saas": true,
     "website": "https://bricksite.io"
+  },
+  "Bridgetown": {
+    "cats": [
+      57
+    ],
+    "description": "Bridgetown is an open-source static site generator built with Ruby, facilitating the creation of fast and efficient websites by generating static HTML and CSS files.",
+    "dom": "link[href^='/_bridgetown/static/']",
+    "icon": "Bridgetown.svg",
+    "implies": "Ruby",
+    "oss": true,
+    "scriptSrc": "^/_bridgetown/static/.+\\.js$",
+    "website": "https://www.bridgetownrb.com"
   },
   "BrightEdge": {
     "cats": [

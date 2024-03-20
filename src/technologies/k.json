@@ -435,6 +435,20 @@
     "oss": true,
     "website": "https://keen-slider.io"
   },
+  "KelonCloud": {
+    "cats": [
+      31
+    ],
+    "description": "KelonCloud offers a variety of cloud-based services, such as CDN, DDoS mitigation, cloud security, streaming, cloud compute, and more.",
+    "headers": {
+      "server": "^(?:(?:KelonCloud|KC)-Private-CDN|KelonCloud)$"
+    },
+    "icon": "KelonCloud.svg",
+    "pricing": [
+      "recurring"
+    ],
+    "website": "https://www.keloncloud.com"
+  },
   "Kemal": {
     "cats": [
       18,
@@ -470,7 +484,8 @@
     },
     "cpe": "cpe:2.3:a:kentico:kentico_cms:*:*:*:*:*:*:*:*",
     "description": "Kentico CMS is a web content management system for building websites, online stores, intranets, and Web 2.0 community sites.",
-    "icon": "Kentico CMS.png",
+    "dom": "link[href*='/kentico/bundles/pageComponents/']",
+    "icon": "Kentico CMS.svg",
     "js": {
       "CMS.Application": ""
     },
@@ -478,6 +493,8 @@
       "generator": "Kentico CMS ([\\d.R]+ \\(build [\\d.]+\\))\\;version:\\1"
     },
     "pricing": [
+      "high",
+      "recurring",
       "poa"
     ],
     "saas": true,
@@ -644,12 +661,12 @@
     "cats": [
       53
     ],
-    "description": "Kicksite is a gym and martial arts member management software with attendance tracking, automated billing, free texting, lead capture forms and more.",
-    "icon": "Kicksite.png",
     "cookies": {
       "_kicksite_session": ""
     },
-    "dom":"iframe[src*='.kicksite.net/']",
+    "description": "Kicksite is a gym and martial arts member management software with attendance tracking, automated billing, free texting, lead capture forms and more.",
+    "dom": "iframe[src*='.kicksite.net/']",
+    "icon": "Kicksite.png",
     "pricing": [
       "mid",
       "recurring"
@@ -708,12 +725,55 @@
       62,
       88
     ],
+    "description": "Kinsta is a managed WordPress hosting provider leveraging the Google Cloud Platform to offer high-performance, secure, and user-friendly hosting solutions for WordPress websites.",
     "headers": {
       "x-kinsta-cache": ""
     },
     "icon": "kinsta.svg",
     "implies": "WordPress",
+    "pricing": [
+      "freemium",
+      "low",
+      "recurring"
+    ],
     "website": "https://kinsta.com"
+  },
+  "Kintone": {
+    "cats": [
+      53
+    ],
+    "description": "Kintone is a versatile cloud-based platform offering business data management, CRM, and custom app development.",
+    "dom": "iframe[src*='.kintoneapp.com/'], a[href*='.kintoneapp.com/'][target='_blank']",
+    "icon": "Kintone.png",
+    "js": {
+      "kintoneappHost": ""
+    },
+    "pricing": [
+      "recurring",
+      "low"
+    ],
+    "saas": true,
+    "website": "https://kintone.cybozu.co.jp"
+  },
+  "Kirby": {
+    "cats": [
+      1
+    ],
+    "cookies": {
+      "kirby_session": ""
+    },
+    "cpe": "cpe:2.3:a:getkirby:kirby:*:*:*:*:*:*:*:*",
+    "description": "Kirby is a file-based content management system (CMS) that simplifies website and web application development by using text files for content management instead of a traditional database.",
+    "icon": "Kirby.svg",
+    "implies": [
+      "PHP",
+      "Vue.js"
+    ],
+    "pricing": [
+      "onetime"
+    ],
+    "saas": true,
+    "website": "https://getkirby.com"
   },
   "Kirki Customizer Framework": {
     "cats": [
@@ -983,6 +1043,22 @@
     },
     "website": "https://koala-framework.org"
   },
+  "Kobalte": {
+    "cats": [
+      66
+    ],
+    "cookies": {
+      "kb-color-mode": ""
+    },
+    "description": "Kobalte is a UI toolkit for building accessible web apps and design systems with SolidJS.",
+    "dom": "div[data-kb-top-layer], html[data-kb-theme]",
+    "icon": "kobalte.png",
+    "implies": [
+      "SolidJS"
+    ],
+    "oss": true,
+    "website": "https://kobalte.dev"
+  },
   "KobiMaster": {
     "cats": [
       6
@@ -1001,10 +1077,7 @@
     ],
     "cpe": "cpe:2.3:a:koha:koha:*:*:*:*:*:*:*:*",
     "description": "Koha is an open-source Integrated Library System (ILS).",
-    "html": [
-      "<input name=\"koha_login_context\" value=\"intranet\" type=\"hidden\">",
-      "<a href=\"/cgi-bin/koha/"
-    ],
+    "dom": "input[name*='koha_login_context'][type='hidden'], a[href*='/cgi-bin/koha/']",
     "icon": "koha.png",
     "implies": "Perl",
     "js": {
@@ -1023,12 +1096,26 @@
       "kohanasession": ""
     },
     "cpe": "cpe:2.3:a:kohanaframework:kohana:*:*:*:*:*:*:*:*",
+    "description": "Kohana is an open-source PHP web framework designed for building web applications, following the Model-View-Controller (MVC) architectural pattern.",
     "headers": {
       "X-Powered-By": "Kohana Framework ([\\d.]+)\\;version:\\1"
     },
-    "icon": "Kohana.png",
+    "icon": "Kohana.svg",
     "implies": "PHP",
     "website": "https://kohanaframework.org"
+  },
+  "Koishi.js": {
+    "cats": [
+      12
+    ],
+    "description": "Koishi.js is a cross-platform chatbot framework.",
+    "icon": "Koishi.js.png",
+    "implies": "TypeScript",
+    "js": {
+      "KOISHI_CONFIG": ""
+    },
+    "oss": true,
+    "website": "https://github.com/koishijs"
   },
   "Koken": {
     "cats": [
@@ -1037,11 +1124,10 @@
     "cookies": {
       "koken_referrer": ""
     },
-    "html": [
-      "<html lang=\"en\" class=\"k-source-essays k-lens-essays\">",
-      "<!--\\s+KOKEN DEBUGGING"
-    ],
-    "icon": "Koken.png",
+    "description": "Koken is a free web site publishing system developed for photographers, designers, artists and creative DIYs.",
+    "dom": "html[lang='en'][class*='k-source-essays']",
+    "html": "<!--\\s+KOKEN DEBUGGING",
+    "icon": "Koken.svg",
     "implies": [
       "PHP",
       "MySQL"

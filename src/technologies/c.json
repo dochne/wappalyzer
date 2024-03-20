@@ -15,6 +15,15 @@
     "scriptSrc": "/website/JavaScript/Vertoshop\\.js",
     "website": "https://ccvshop.be"
   },
+  "CDK Global": {
+    "cats": [
+      53
+    ],
+    "description": "CDK Global offered a range of software and digital marketing solutions designed to help automotive businesses manage their operations, improve customer engagement, and enhance their online presence. Their services included dealership management systems (DMS), customer relationship management (CRM) software, website and digital marketing services, and various other tools tailored to the automotive industry.",
+    "icon": "CDK Global.svg",
+    "scriptSrc": "\\.connectcdk\\.com/",
+    "website": "https://www.cdkglobal.com"
+  },
   "CDN77": {
     "cats": [
       31
@@ -290,10 +299,13 @@
       22
     ],
     "cpe": "cpe:2.3:a:caddyserver:caddy:*:*:*:*:*:*:*:*",
+    "description": "Caddy is a Go-based web server known for its simplicity and automatic HTTPS features.",
     "headers": {
       "Server": "^Caddy$"
     },
     "icon": "caddy.svg",
+    "implies": "Go",
+    "oss": true,
     "website": "https://caddyserver.com"
   },
   "Cafe24": {
@@ -395,7 +407,8 @@
     "dom": "a[href*='//calendly.com/'][target='_blank']",
     "icon": "Calendly.svg",
     "js": {
-      "Calendly": ""
+      "Calendly.closePopupWidget": "",
+      "Calendly.showPopupWidget": ""
     },
     "pricing": [
       "low",
@@ -675,15 +688,15 @@
       51
     ],
     "description": "Carrd is a platform for building simple, responsive, one-page sites.",
+    "dom": "link[href*='.carrd.co'][rel='canonical']",
     "icon": "Carrd.svg",
     "pricing": [
       "freemium",
       "low",
       "recurring"
     ],
-    "requires": "Apache HTTP Server",
     "saas": true,
-    "scripts": "\\(\\!section\\s\\|\\|\\ssection\\.tagName\\s\\!\\=\\s\\'SECTION\\'\\)",
+    "scripts": "\\(\\!section\\s\\|\\|\\ssection\\.tagName\\s\\!\\=\\s\\'SECTION\\'\\)\\;confidence:90",
     "website": "https://carrd.co"
   },
   "Carro": {
@@ -1226,6 +1239,21 @@
     "saas": true,
     "website": "https://www.chatstack.com"
   },
+  "ChatWith.io": {
+    "cats": [
+      52
+    ],
+    "description": "ChatWith.io is a versatile platform enabling WhatsApp link management, statistics tracking, and specialised services like WhatsApp Business Dating and widgets for efficient customer engagement.",
+    "dom": "a[href*='//chatwith.io/'][target='_self']",
+    "icon": "ChatWith.io.png",
+    "pricing": [
+      "onetime",
+      "low"
+    ],
+    "saas": true,
+    "scriptSrc": "widget\\.tochat\\.be/",
+    "website": "https://chatwith.io"
+  },
   "Chatango": {
     "cats": [
       5
@@ -1239,6 +1267,24 @@
     "saas": true,
     "scriptSrc": "st\\.chatango\\.com",
     "website": "https://chatango.com"
+  },
+  "Chatbase": {
+    "cats": [
+      52
+    ],
+    "description": "Chatbase is an AI chatbot builder, it trains ChatGPT on your data and lets you add a chat widget to your website.",
+    "icon": "Chatbase.svg",
+    "js": {
+      "chatbaseConfig.chatbotId": "",
+      "embedChatbaseChatbot": ""
+    },
+    "pricing": [
+      "freemium",
+      "mid",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://www.chatbase.co"
   },
   "Chatra": {
     "cats": [
@@ -1565,6 +1611,45 @@
     "saas": true,
     "website": "https://churnzero.net"
   },
+  "Ciklik": {
+    "cats": [
+      6,
+      41
+    ],
+    "cookies": {
+      "ciklik_session": ""
+    },
+    "description": "Ciklik is an ecommerce platform that empowers individuals to establish online stores and market their subscription-based products.",
+    "icon": "Ciklik.svg",
+    "js": {
+      "t_ciklik": ""
+    },
+    "pricing": [
+      "mid",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://www.ciklik.co"
+  },
+  "Circle": {
+    "cats": [
+      2
+    ],
+    "cookies": {
+      "_circle_session:": "\\;confidence:50"
+    },
+    "description": "Circie is an all-in-one community platform for businesses that brings together engaging courses, discussions, members, live streams, chat, events, and memberships.",
+    "icon": "Circle.svg",
+    "js": {
+      "circleUser": "\\;confidence:50"
+    },
+    "pricing": [
+      "mid",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://circle.so"
+  },
   "CitrusPay": {
     "cats": [
       41
@@ -1766,11 +1851,17 @@
       10
     ],
     "description": "Clearbit Reveal identifies anonymous visitors to websites.",
-    "icon": "Clearbit.png",
+    "icon": "Clearbit.svg",
+    "pricing": [
+      "freemium",
+      "low",
+      "recurring"
+    ],
+    "saas": true,
     "scriptSrc": [
       "reveal\\.clearbit\\.com/v[(0-9)]/"
     ],
-    "website": "https://clearbit.com/reveal"
+    "website": "https://clearbit.com/#reveal"
   },
   "Clerk": {
     "cats": [
@@ -1816,7 +1907,7 @@
       10
     ],
     "description": "CleverTap is a SaaS based customer lifecycle management and mobile marketing company headquartered in Mountain View, California.",
-    "icon": "CleverTap.png",
+    "icon": "CleverTap.svg",
     "js": {
       "clevertap": ""
     },
@@ -2062,6 +2153,23 @@
     "oss": true,
     "website": "https://github.com/google/closure-library"
   },
+  "CloudCannon": {
+    "cats": [
+      1
+    ],
+    "description": "CloudCannon is a web development platform and content management system (CMS).",
+    "dom": "[data-cms-editor-link*='cloudcannon:'], a[href*='cloudcannon:']",
+    "headers": {
+      "cc-build-id": "\\d+"
+    },
+    "icon": "CloudCannon.svg",
+    "pricing": [
+      "recurring",
+      "mid"
+    ],
+    "saas": true,
+    "website": "https://cloudcannon.com"
+  },
   "CloudCart": {
     "cats": [
       6
@@ -2109,7 +2217,7 @@
     "headers": {
       "Server": "cloudera"
     },
-    "icon": "Cloudera.png",
+    "icon": "Cloudera.svg",
     "website": "https://www.cloudera.com"
   },
   "Cloudflare": {
@@ -3017,6 +3125,26 @@
     "scriptSrc": "\\.conferwith\\.io/",
     "website": "https://conferwith.io"
   },
+  "Conferbot": {
+    "cats": [
+      52
+    ],
+    "description": "Conferbot is a platform designed to improve website engagement through customisable chatbots, catering to various business requirements.",
+    "icon": "Conferbot.png",
+    "js": {
+      "ConferbotWidget": ""
+    },
+    "pricing": [
+      "low",
+      "recurring",
+      "freemium"
+    ],
+    "saas": true,
+    "scriptSrc": [
+      "conferbot\\.defaults.*\\.min\\.js"
+    ],
+    "website": "https://www.conferbot.com"
+  },
   "Confiant": {
     "cats": [
       16
@@ -3550,6 +3678,25 @@
     "scriptSrc": "\\.cookie-script\\.com/",
     "website": "https://cookie-script.com"
   },
+  "Cookie Seal": {
+    "cats": [
+      67
+    ],
+    "description": "Cookie Seal is a tool or system that helps you manage and configure the use of cookies on your website in accordance with data protection laws, ensuring compliance with relevant regulations.",
+    "dom": "link[href*='assets.cookieseal.com']",
+    "icon": "Cookie Seal.svg",
+    "js": {
+      "CookieSeal": "",
+      "cookieSeal.consentEnabled": ""
+    },
+    "pricing": [
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "scriptSrc": "\\.cookieseal\\.com/",
+    "website": "https://cookieseal.com"
+  },
   "CookieFirst": {
     "cats": [
       67
@@ -3649,6 +3796,25 @@
     "scriptSrc": "copypoison\\.com/cp\\.js",
     "website": "https://copypoison.com/"
   },
+  "Cordial": {
+    "cats": [
+      76,
+      32
+    ],
+    "description": "Cordial is a cross-channel marketing and customer engagement platform for enterprise brands to send personalized email, SMS, mobile push notifications.",
+    "icon": "Cordial.svg",
+    "js": {
+      "CordialJS": "",
+      "CordialObject": "",
+      "Cordial_trackUrl": ""
+    },
+    "pricing": [
+      "poa"
+    ],
+    "saas": true,
+    "scriptSrc": "\\.cordial\\.io/",
+    "website": "https://cordial.com"
+  },
   "CoreMedia Content Cloud": {
     "cats": [
       1,
@@ -3687,7 +3853,7 @@
     "cats": [
       1
     ],
-    "description": "Corebine is a content management system designed for Sports",
+    "description": "Corebine is a content management system designed for Sports.",
     "dom": "#corebine-app",
     "icon": "Corebine.png",
     "js": {
@@ -3956,6 +4122,25 @@
     },
     "scriptSrc": "script\\.crazyegg\\.com/pages/scripts/\\d+/\\d+\\.js",
     "website": "https://crazyegg.com"
+  },
+  "Crealive": {
+    "cats": [
+      6
+    ],
+    "description": "Crealive is a boutique digital agency.",
+    "dom": "a[href*='//crealive.net'][target='_blank']",
+    "icon": "Crealive.svg",
+    "implies": [
+      "PHP",
+      "MySQL",
+      "Laravel"
+    ],
+    "pricing": [
+      "poa"
+    ],
+    "requires": "Cart Functionality",
+    "saas": true,
+    "website": "https://crealive.net"
   },
   "CreateJS": {
     "cats": [
