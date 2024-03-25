@@ -2343,9 +2343,13 @@
     "description": "Route is a delivery and shipping tracking app",
     "icon": "route.png",
     "js": {
-      "Routeapp": ""
+      "Routeapp": "",
+      "routeWidgetInitialized": "" 
     },
-    "scriptSrc": "//cdn.routeapp.io/",
+    "scriptSrc": [
+      "cdn\\.routeapp\\.io",
+      "shopify-widget\\.route\\.com"
+    ],
     "website": "https://route.com/"
   },
   "Royal Mail": {
