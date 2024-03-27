@@ -1041,7 +1041,8 @@
     "icon": "Global-e.svg",
     "js": {
       "GLOBALE_ENGINE_CONFIG": "",
-      "GlobalE": ""
+      "GlobalE": "",
+      "GLBE_PARAMS": ""
     },
     "pricing": [
       "poa"
