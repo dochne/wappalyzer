@@ -1035,7 +1035,9 @@
     "cookies": {
       "GlobalE_CT_Data": "",
       "GlobalE_Data": "",
-      "GlobalE_SupportThirdPartCookies": ""
+      "GlobalE_SupportThirdPartCookies": "",
+      "GLBE_SESS_ID": "",
+      "GlobalE_Consent": ""
     },
     "description": "Global-e is a provider of cross-border ecommerce solutions.",
     "icon": "Global-e.svg",
