@@ -2589,6 +2589,17 @@
     "implies": "Ruby",
     "website": "https://mongrel2.org"
   },
+  "Monkcommerce": {
+    "cats": [
+      6
+    ],
+    "description": "Monk Commerce is a software-as-a-service that aims to increase income for small e-commerce businesses by deploying AOV boosting techniques like cart and post-purchase offers",
+    "icon": "Monk.svg",
+    "scriptSrc": [
+      "js\\.monkcommerce\\.app"
+    ],
+    "website": "https://monkcommerce.com/"
+  },
   "Monkey HTTP Server": {
     "cats": [
       22
