@@ -4138,6 +4138,18 @@
     "scriptSrc": "/wp-content/plugins/revslider/",
     "website": "https://www.sliderrevolution.com"
   },
+  "Slim SEO": {
+    "cats": [
+      87
+    ],
+    "description": "Slim SEO is a full-featured SEO plugin for WordPress that's lightweight, blazing fast with minimum configuration.",
+    "pricing": ["low", "freemium", "onetime", "recurring"],
+    "dom": "#slim-seo-schema",
+    "icon": "Slim SEO.svg",
+    "oss": true,
+    "requires": "WordPress",
+    "website": "https://wpslimseo.com"
+  },
   "Slimbox": {
     "cats": [
       59
