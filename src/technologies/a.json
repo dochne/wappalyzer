@@ -4219,7 +4219,6 @@
     ],
     "description": "Assertive Yield is a SaaS company that specialises in helping SSPs (Supply-Side Platforms), publishers, and ad networks optimise their advertising revenue through real-time attribution and yield optimisation strategies.",
     "icon": "Assertive Yield.svg",
-    "saas": true,
     "js": {
       "assertive.predict": ""
     },
@@ -4227,6 +4226,7 @@
       "payg",
       "poa"
     ],
+    "saas": true,
     "website": "https://www.assertiveyield.com"
   },
   "Astra": {
@@ -4677,8 +4677,8 @@
       87
     ],
     "description": "Automatic.css is a CSS framework for WordPress page builders.",
-    "icon": "Automatic.css.png",
     "dom": "link[href*='/wp-content/uploads/automatic-css/']",
+    "icon": "Automatic.css.png",
     "pricing": [
       "low",
       "recurring"

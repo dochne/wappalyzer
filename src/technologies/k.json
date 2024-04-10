@@ -644,12 +644,12 @@
     "cats": [
       53
     ],
-    "description": "Kicksite is a gym and martial arts member management software with attendance tracking, automated billing, free texting, lead capture forms and more.",
-    "icon": "Kicksite.png",
     "cookies": {
       "_kicksite_session": ""
     },
-    "dom":"iframe[src*='.kicksite.net/']",
+    "description": "Kicksite is a gym and martial arts member management software with attendance tracking, automated billing, free texting, lead capture forms and more.",
+    "dom": "iframe[src*='.kicksite.net/']",
+    "icon": "Kicksite.png",
     "pricing": [
       "mid",
       "recurring"
@@ -837,6 +837,17 @@
     },
     "scriptSrc": "klaviyo\\.com",
     "website": "https://www.klaviyo.com/"
+  },
+  "Klaviyo Reviews": {
+    "cats": [
+      90
+    ],
+    "description": "Klaviyo is an email marketing platform for online businesses.",
+    "icon": "Klaviyo.svg",
+    "js": {
+      "klaviyoModulesObject.loadedModules": "reviews"
+    },
+    "website": "https://www.klaviyo.com/product-reviews"
   },
   "Klevu": {
     "cats": [

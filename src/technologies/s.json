@@ -795,8 +795,8 @@
     ],
     "description": "Salla is an ecommerce platform specifically tailored to serve businesses and customers in Saudi Arabia.",
     "headers": {
-      "x-powered-by": "^Salla$",
-      "X-Frame-Options": "\\.salla\\.sa"
+      "X-Frame-Options": "\\.salla\\.sa",
+      "x-powered-by": "^Salla$"
     },
     "icon": "Salla.svg",
     "js": {
@@ -2310,9 +2310,9 @@
     "js": {
       "ShopifyPay.apiHost": ""
     },
-    "requires": "Shopify",
     "scriptSrc": [
-      "cdn\\.shopify\\.com/shopifycloud/shopify_pay/"
+      "cdn\\.shopify\\.com/shopifycloud/shopify_pay/",
+      "cdn\\.shopify\\.com/shopifycloud/shopify-js/shop-pay-payment-request\\.js"
     ],
     "website": "https://shop.app"
   },
@@ -2327,7 +2327,6 @@
       "Affirm",
       "Shop Pay"
     ],
-    "requires": "Shopify",
     "website": "https://shoppay.affirm.com"
   },
   "ShopBase": {
@@ -2587,11 +2586,9 @@
       100
     ],
     "description": "Shopify Chat is Shopify's native live chat function that allows you to have real-time conversations with customers visiting your Shopify store.",
+    "dom": "div#shopify-chat",
     "icon": "Shopify.svg",
     "implies": "Shopify",
-    "scriptSrc": [
-      "cdn\\.shopify\\.com/shopifycloud/shopify_chat/"
-    ],
     "website": "https://www.shopify.com/inbox"
   },
   "Shopify Consent Management": {
@@ -6928,6 +6925,9 @@
     "description": "Svelte is a free and open-source front end compiler created by Rich Harris and maintained by the Svelte core team members.",
     "dom": "[class*='svelte-']",
     "icon": "Svelte.svg",
+    "js": {
+      "__svelte": ""
+    },
     "oss": true,
     "website": "https://svelte.dev"
   },
@@ -7082,7 +7082,7 @@
     ],
     "description": "Swiper is a JavaScript library that creates modern touch sliders with hardware-accelerated transitions.",
     "dom": [
-      "div[data-swiper-slide-index]", 
+      "div[data-swiper-slide-index]",
       "swiper-container",
       "swiper-slide",
       "div.swiper-wrapper",
