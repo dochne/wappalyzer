@@ -1767,6 +1767,19 @@
     "scriptSrc": "sib(?:automation|forms)\\.com/",
     "website": "https://www.sendinblue.com"
   },
+  "Sendlane": {
+    "cats": [
+      32
+    ],
+    "description": "Sendlane is an email and sms marketing platform for online businesses",
+    "icon": "Sendland.png",
+    "js": {
+      "_Sendlane": ""
+    },
+    "saas": true,
+    "scriptSrc": "sendlane\\.com/scripts/pusher\\.js",
+    "website": "https://www.sendlane.com/"
+  },
   "Sensors Data": {
     "cats": [
       10
