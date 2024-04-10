@@ -1537,17 +1537,6 @@
     "scripts": "aem-(?:GridColumn|apps/)",
     "website": "https://www.adobe.com/marketing/experience-manager.html"
   },
-  "Adobe Experience Manager with Edge Delivery Services preview": {
-    "cats": [
-      1
-    ],
-    "cpe": "cpe:2.3:a:adobe:experience_manager:*:*:*:*:*:*:*:*",
-    "description": "Edge Delivery Services in Adobe Experience Manager Sites as a Cloud Service (Preview)",
-    "icon": "Adobe Experience Platform.svg",
-    "saas": "true",
-    "url": "https.+\\.(aem|hlx)\\.(page|live)",
-    "website": "https://www.aem.live"
-  },
   "Adobe Experience Manager Edge Delivery Services": {
     "cats": [
       1
@@ -1557,8 +1546,7 @@
     "icon": "Adobe Experience Platform.svg",
     "saas": "true",
     "excludes": [
-      "Adobe Experience Manager",
-      "Adobe Experience Manager Edge Delivery Services preview"
+      "Adobe Experience Manager"
     ],
     "scriptSrc": [
       "^.+/scripts/lib-franklin\\.js$",
