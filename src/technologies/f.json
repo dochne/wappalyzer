@@ -2237,9 +2237,6 @@
     },
     "dom": ".fc-consent-root, iframe[name='googlefcLoaded'], iframe[name='googlefcPresent'], .fc-dialog, .fc-choice-dialog",
     "icon": "Google.svg",
-    "js": {
-      "__googlefc": ""
-    },
     "scriptSrc": "fundingchoicesmessages\\.google\\.com",
     "website": "https://developers.google.com/funding-choices"
   },
