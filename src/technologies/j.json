@@ -638,7 +638,7 @@
       "recurring"
     ],
     "saas": true,
-    "scriptSrc": "cdn\\.judge\\.me",
+    "scriptSrc": "\\.judge\\.me",
     "website": "https://judge.me"
   },
   "JuicyAds": {
