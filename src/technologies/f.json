@@ -1689,7 +1689,7 @@
     ],
     "description": "Framer is a no-code web design platform for designing and publishing responsive websites.",
     "headers": {
-      "server": "^Framer/",
+      "server": "^Framer/"
     },
     "icon": "Framer Sites.svg",
     "implies": "React",
