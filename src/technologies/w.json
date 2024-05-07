@@ -516,18 +516,6 @@
     "oss": true,
     "website": "https://wagtail.org"
   },
-  "Wake": {
-    "cats": [
-      6
-    ],
-    "description": "Wake is an ecommerce software with integrated digital solutions to manage online stores.",
-    "headers": {
-      "X-Powered-By": "Wake"
-    },
-    "icon": "wakecommerce.svg",
-    "saas": true,
-    "website": "https://wake.tech/"
-  },
   "Wair": {
     "cats": [
       76,
@@ -576,6 +564,18 @@
     "saas": true,
     "scriptSrc": "rum\\.wakav\\.ir/",
     "website": "https://www.wakav.ir"
+  },
+  "Wake": {
+    "cats": [
+      6
+    ],
+    "description": "Wake is an ecommerce software with integrated digital solutions to manage online stores.",
+    "headers": {
+      "X-Powered-By": "Wake"
+    },
+    "icon": "wakecommerce.svg",
+    "saas": true,
+    "website": "https://wake.tech/"
   },
   "WalkMe": {
     "cats": [

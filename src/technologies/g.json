@@ -1033,18 +1033,18 @@
       106
     ],
     "cookies": {
-      "GlobalE_CT_Data": "",
-      "GlobalE_Data": "",
-      "GlobalE_SupportThirdPartCookies": "",
       "GLBE_SESS_ID": "",
-      "GlobalE_Consent": ""
+      "GlobalE_CT_Data": "",
+      "GlobalE_Consent": "",
+      "GlobalE_Data": "",
+      "GlobalE_SupportThirdPartCookies": ""
     },
     "description": "Global-e is a provider of cross-border ecommerce solutions.",
     "icon": "Global-e.svg",
     "js": {
+      "GLBE_PARAMS": "",
       "GLOBALE_ENGINE_CONFIG": "",
-      "GlobalE": "",
-      "GLBE_PARAMS": ""
+      "GlobalE": ""
     },
     "pricing": [
       "poa"
