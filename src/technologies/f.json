@@ -1700,8 +1700,8 @@
       "__framer_importFromPackage": ""
     },
     "meta": {
-      "generator": "^Framer",
-    }
+      "generator": "^Framer"
+    },
     "oss": false,
     "pricing": [
       "low",
