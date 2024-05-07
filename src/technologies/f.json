@@ -1699,6 +1699,9 @@
       "Framer.version": "([\\d\\.]+)\\;version:\\1\\;confidence:0",
       "__framer_importFromPackage": ""
     },
+    "meta": {
+      "generator": "^Framer",
+    }
     "oss": false,
     "pricing": [
       "low",
@@ -1707,7 +1710,6 @@
     ],
     "saas": true,
     "scriptSrc": "framerusercontent\\.com",
-    "generator": "^Framer",
     "website": "https://www.framer.com"
   },
   "Frames": {
