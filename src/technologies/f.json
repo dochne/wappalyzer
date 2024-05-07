@@ -1687,7 +1687,10 @@
     "cats": [
       51
     ],
-    "description": "Framer is primarily a design and prototyping tool. It allows you to design interactive prototypes of websites and applications using production components and real data.",
+    "description": "Framer is a no-code web design platform for designing and publishing responsive websites.",
+    "headers": {
+      "server": "^Framer/"
+    },
     "icon": "Framer Sites.svg",
     "implies": "React",
     "js": {
@@ -1695,6 +1698,9 @@
       "Framer.Animatable": "",
       "Framer.version": "([\\d\\.]+)\\;version:\\1\\;confidence:0",
       "__framer_importFromPackage": ""
+    },
+    "meta": {
+      "generator": "^Framer"
     },
     "oss": false,
     "pricing": [
@@ -1704,7 +1710,7 @@
     ],
     "saas": true,
     "scriptSrc": "framerusercontent\\.com",
-    "website": "https://framer.com/sites"
+    "website": "https://www.framer.com"
   },
   "Frames": {
     "cats": [
