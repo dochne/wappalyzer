@@ -52,21 +52,6 @@
     },
     "website": "https://github.com/ruby/rdoc"
   },
-  "Really Simple SSL & Security": {
-    "cats": [
-      16
-    ],
-    "description": "Really Simple SSL & Security is an easy to install and performant security solution for WordPress.",
-    "icon": "really-simple-ssl.png",
-    "dom": "body[data-rsssl]",
-    "pricing": [
-      "freemium",
-      "recurring"
-    ],
-    "requires": "WordPress",
-    "saas": true,
-    "website": "https://really-simple-ssl.com"
-  },
   "REDAXO": {
     "cats": [
       1
@@ -749,6 +734,21 @@
     "oss": true,
     "requires": "WordPress",
     "website": "https://wordpress.org/plugins/really-simple-captcha"
+  },
+  "Really Simple SSL & Security": {
+    "cats": [
+      16
+    ],
+    "description": "Really Simple SSL & Security is an easy to install and performant security solution for WordPress.",
+    "dom": "body[data-rsssl]",
+    "icon": "really-simple-ssl.png",
+    "pricing": [
+      "freemium",
+      "recurring"
+    ],
+    "requires": "WordPress",
+    "saas": true,
+    "website": "https://really-simple-ssl.com"
   },
   "RebelMouse": {
     "cats": [
@@ -2344,7 +2344,7 @@
     "icon": "route.png",
     "js": {
       "Routeapp": "",
-      "routeWidgetInitialized": "" 
+      "routeWidgetInitialized": ""
     },
     "scriptSrc": [
       "cdn\\.routeapp\\.io",

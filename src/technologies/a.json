@@ -1543,11 +1543,11 @@
     ],
     "cpe": "cpe:2.3:a:adobe:experience_manager:*:*:*:*:*:*:*:*",
     "description": "Edge Delivery Services in Adobe Experience Manager Sites as a Cloud Service, also know as Helix, Franklin, Next-Generation Composability is a fast and lightweight content management system from Adobe.",
-    "icon": "Adobe Experience Platform.svg",
-    "saas": true,
     "excludes": [
       "Adobe Experience Manager"
     ],
+    "icon": "Adobe Experience Platform.svg",
+    "saas": true,
     "scriptSrc": [
       "^.+/scripts/lib-franklin\\.js$",
       "^.+/scripts/aem\\.js$"

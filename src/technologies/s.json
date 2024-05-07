@@ -4156,10 +4156,15 @@
       87
     ],
     "description": "Slim SEO is a full-featured SEO plugin for WordPress that's lightweight, blazing fast with minimum configuration.",
-    "pricing": ["low", "freemium", "onetime", "recurring"],
     "dom": "#slim-seo-schema",
     "icon": "Slim-SEO.svg",
     "oss": true,
+    "pricing": [
+      "low",
+      "freemium",
+      "onetime",
+      "recurring"
+    ],
     "requires": "WordPress",
     "website": "https://wpslimseo.com"
   },
