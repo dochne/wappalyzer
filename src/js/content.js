@@ -51,7 +51,7 @@ async function getDom(technologies) {
       technologies: _technologies.filter(({ dom }) =>
         Object.values(dom)
           .flat()
-          .some(({ properties }) => properties)
+          .some(({ properties }) => properties),
       ),
     })),
     ..._technologies.reduce((technologies, { name, dom }) => {
@@ -84,7 +84,7 @@ async function getDom(technologies) {
               exists &&
               technologies.findIndex(
                 ({ name: _name, selector: _selector, exists }) =>
-                  name === _name && selector === _selector && exists === ''
+                  name === _name && selector === _selector && exists === '',
               ) === -1
             ) {
               technologies.push({
@@ -95,17 +95,16 @@ async function getDom(technologies) {
             }
 
             if (text) {
-              // eslint-disable-next-line unicorn/prefer-text-content
               const value = (node.innerText ? node.innerText.trim() : '').slice(
                 0,
-                1000000
+                1000000,
               )
 
               if (
                 value &&
                 technologies.findIndex(
                   ({ name: _name, selector: _selector, text }) =>
-                    name === _name && selector === _selector && text === value
+                    name === _name && selector === _selector && text === value,
                 ) === -1
               ) {
                 technologies.push({
@@ -130,7 +129,7 @@ async function getDom(technologies) {
                       name === _name &&
                       selector === _selector &&
                       property === _property &&
-                      value === toScalar(value)
+                      value === toScalar(value),
                   ) === -1
                 ) {
                   const value = node[property]
@@ -161,7 +160,7 @@ async function getDom(technologies) {
                       name === _name &&
                       selector === _selector &&
                       attribute === _atrribute &&
-                      value === toScalar(value)
+                      value === toScalar(value),
                   ) === -1
                 ) {
                   const value = node.getAttribute(attribute)
@@ -230,10 +229,10 @@ const Content = {
                 resolve(
                   languages
                     .filter(({ percentage }) => percentage >= 75)
-                    .map(({ language: lang }) => lang)[0]
-                )
+                    .map(({ language: lang }) => lang)[0],
+                ),
               )
-            : resolve()
+            : resolve(),
         ))
 
       const cookies = document.cookie.split('; ').reduce(
@@ -241,11 +240,11 @@ const Content = {
           ...cookies,
           [cookie.split('=').shift()]: [cookie.split('=').pop()],
         }),
-        {}
+        {},
       )
 
       // Text
-      // eslint-disable-next-line unicorn/prefer-text-content
+
       const text = document.body.innerText.replace(/\s+/g, ' ').slice(0, 25000)
 
       // CSS rules
@@ -291,13 +290,13 @@ const Content = {
 
           return metas
         },
-        {}
+        {},
       )
 
       // Detect Google Ads
       if (/^(www\.)?google(\.[a-z]{2,3}){1,2}$/.test(location.hostname)) {
         const ads = document.querySelectorAll(
-          '#tads [data-text-ad] a[data-pcu]'
+          '#tads [data-text-ad] a[data-pcu]',
         )
 
         for (const ad of ads) {
@@ -327,18 +326,17 @@ const Content = {
           const urls = [
             ...new Set([
               `https://${decodeURIComponent(
-                ad.href.split(/^.+\?u=https%3A%2F%2F/).pop()
+                ad.href.split(/^.+\?u=https%3A%2F%2F/).pop(),
               )
                 .split('/')
                 .shift()}`,
 
-              // eslint-disable-next-line unicorn/prefer-text-content
               `https://${ad.innerText.split('\n').pop()}`,
             ]),
           ]
 
           urls.forEach((url) =>
-            Content.driver('detectTechnology', [url, 'Facebook Ads'])
+            Content.driver('detectTechnology', [url, 'Facebook Ads']),
           )
         }
       }
@@ -402,10 +400,10 @@ const Content = {
             args instanceof Error
               ? [args.toString()]
               : args
-              ? Array.isArray(args)
-                ? args
-                : [args]
-              : [],
+                ? Array.isArray(args)
+                  ? args
+                  : [args]
+                : [],
         },
         (response) => {
           chrome.runtime.lastError
@@ -416,11 +414,11 @@ const Content = {
                   new Error(
                     `${
                       chrome.runtime.lastError.message
-                    }: Driver.${func}(${JSON.stringify(args)})`
-                  )
+                    }: Driver.${func}(${JSON.stringify(args)})`,
+                  ),
                 )
             : resolve(response)
-        }
+        },
       )
     })
   },
@@ -447,7 +445,7 @@ const Content = {
             ]),
           ])
         }
-      })
+      }),
     )
   },
 

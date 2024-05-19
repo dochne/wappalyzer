@@ -31,7 +31,7 @@ function benchmarkSummary() {
   const totalPatterns = Object.values(benchmarks).length
   const totalDuration = Object.values(benchmarks).reduce(
     (sum, { duration }) => sum + duration,
-    0
+    0,
   )
 
   // eslint-disable-next-line no-console
@@ -48,7 +48,7 @@ function benchmarkSummary() {
         }
 
         return benchmarks
-      }, {})
+      }, {}),
     )
       .sort(({ duration: a }, { duration: b }) => (a > b ? -1 : 1))
       .filter(({ duration }) => duration)
@@ -58,7 +58,7 @@ function benchmarkSummary() {
           ...technologies,
           [technology]: duration,
         }),
-        {}
+        {},
       ),
     slowestPatterns: Object.values(benchmarks)
       .sort(({ duration: a }, { duration: b }) => (a > b ? -1 : 1))
@@ -99,7 +99,7 @@ const Wappalyzer = {
     const resolved = detections.reduce((resolved, { technology, lastUrl }) => {
       if (
         resolved.findIndex(
-          ({ technology: { name } }) => name === technology?.name
+          ({ technology: { name } }) => name === technology?.name,
         ) === -1
       ) {
         let version = ''
@@ -109,7 +109,7 @@ const Wappalyzer = {
         detections
           .filter(
             ({ technology: _technology }) =>
-              _technology && _technology.name === technology.name
+              _technology && _technology.name === technology.name,
           )
           .forEach(
             ({
@@ -126,7 +126,7 @@ const Wappalyzer = {
                   ? _version
                   : version
               rootPath = rootPath || _rootPath || undefined
-            }
+            },
           )
 
         resolved.push({ technology, confidence, version, rootPath, lastUrl })
@@ -141,7 +141,7 @@ const Wappalyzer = {
     const priority = ({ technology: { categories } }) =>
       categories.reduce(
         (max, id) => Math.max(max, Wappalyzer.getCategory(id).priority),
-        0
+        0,
       )
 
     return resolved
@@ -175,7 +175,7 @@ const Wappalyzer = {
           cpe,
           rootPath,
           lastUrl,
-        })
+        }),
       )
   },
 
@@ -198,13 +198,13 @@ const Wappalyzer = {
 
           // Parse ternary operator
           const ternary = new RegExp(`\\\\${index}\\?([^:]+):(.*)$`).exec(
-            version
+            version,
           )
 
           if (ternary && ternary.length === 3) {
             resolved = version.replace(
               ternary[0],
-              match ? ternary[1] : ternary[2]
+              match ? ternary[1] : ternary[2],
             )
           }
 
@@ -239,7 +239,7 @@ const Wappalyzer = {
 
         do {
           index = resolved.findIndex(
-            ({ technology: { name } }) => name === excluded.name
+            ({ technology: { name } }) => name === excluded.name,
           )
 
           if (index !== -1) {
@@ -271,7 +271,7 @@ const Wappalyzer = {
 
             if (
               resolved.findIndex(
-                ({ technology: { name } }) => name === implied.name
+                ({ technology: { name } }) => name === implied.name,
               ) === -1
             ) {
               resolved.push({
@@ -283,7 +283,7 @@ const Wappalyzer = {
 
               done = false
             }
-          }
+          },
         )
       })
     } while (resolved.length && !done)
@@ -323,9 +323,9 @@ const Wappalyzer = {
           Object.keys(relations)
             .map(
               (type) =>
-                items[type] && relations[type](technology, type, items[type])
+                items[type] && relations[type](technology, type, items[type]),
             )
-            .flat()
+            .flat(),
         )
         .flat()
         .filter((technology) => technology)
@@ -387,11 +387,11 @@ const Wappalyzer = {
           typeof dom === 'string' || Array.isArray(dom)
             ? toArray(dom).reduce(
                 (dom, selector) => ({ ...dom, [selector]: { exists: '' } }),
-                {}
+                {},
               )
             : dom,
           true,
-          false
+          false,
         ),
         excludes: transform(excludes).map(({ value }) => ({ name: value })),
         headers: transform(headers),
@@ -435,7 +435,7 @@ const Wappalyzer = {
           Wappalyzer.requires[name] = Wappalyzer.requires[name] || []
 
           Wappalyzer.requires[name].push(technology)
-        })
+        }),
       )
 
     Wappalyzer.requires = Object.keys(Wappalyzer.requires).map((name) => ({
@@ -451,19 +451,19 @@ const Wappalyzer = {
             Wappalyzer.categoryRequires[id] || []
 
           Wappalyzer.categoryRequires[id].push(technology)
-        })
+        }),
       )
 
     Wappalyzer.categoryRequires = Object.keys(Wappalyzer.categoryRequires).map(
       (id) => ({
         categoryId: parseInt(id, 10),
         technologies: Wappalyzer.categoryRequires[id],
-      })
+      }),
     )
 
     Wappalyzer.technologies = Wappalyzer.technologies.filter(
       ({ requires, requiresCategory }) =>
-        !requires.length && !requiresCategory.length
+        !requires.length && !requiresCategory.length,
     )
   },
 
@@ -507,7 +507,7 @@ const Wappalyzer = {
 
     const parsed = Object.keys(patterns).reduce((parsed, key) => {
       parsed[caseSensitive ? key : key.toLowerCase()] = toArray(
-        patterns[key]
+        patterns[key],
       ).map((pattern) => Wappalyzer.parsePattern(pattern, isRegex))
 
       return parsed
@@ -527,7 +527,7 @@ const Wappalyzer = {
           ...parsed,
           [key]: Wappalyzer.parsePattern(pattern[key]),
         }),
-        {}
+        {},
       )
     } else {
       const { value, regex, confidence, version } = pattern
@@ -555,7 +555,7 @@ const Wappalyzer = {
                     .replace(/\*/g, '{0,250}')
                     .replace(/__escapedPlus__/g, '\\+')
                 : '',
-              'i'
+              'i',
             )
           }
 
@@ -653,7 +653,7 @@ const Wappalyzer = {
       patterns.forEach((_pattern) => {
         const pattern = (subtypes || []).reduce(
           (pattern, subtype) => pattern[subtype] || {},
-          _pattern
+          _pattern,
         )
 
         values.forEach((value) => {

@@ -22,7 +22,7 @@
                     Object.prototype.hasOwnProperty.call(value, method)
                       ? value[method]
                       : '__UNDEFINED__',
-                  window
+                  window,
                 )
 
               if (value !== '__UNDEFINED__') {

@@ -10,7 +10,7 @@ const {
   resolve,
   getTechnology,
 } = Wappalyzer
-const { agent, promisify, getOption, setOption, open, globEscape } = Utils
+const { promisify, getOption, setOption, globEscape } = Utils
 
 const expiry = 1000 * 60 * 60 * 48
 
@@ -33,10 +33,10 @@ function getRequiredTechnologies(name, categoryId) {
   return name
     ? Wappalyzer.requires.find(({ name: _name }) => _name === name).technologies
     : categoryId
-    ? Wappalyzer.categoryRequires.find(
-        ({ categoryId: _categoryId }) => _categoryId === categoryId
-      ).technologies
-    : undefined
+      ? Wappalyzer.categoryRequires.find(
+          ({ categoryId: _categoryId }) => _categoryId === categoryId,
+        ).technologies
+      : undefined
 }
 
 function isSimilarUrl(a, b) {
@@ -72,36 +72,20 @@ const Driver = {
                   confidence,
                 },
                 version,
-              })
+              }),
             ),
           },
         }),
-        {}
+        {},
       ),
       robots: await getOption('robots', {}),
     }
 
     const { version } = chrome.runtime.getManifest()
     const previous = await getOption('version')
-    const upgradeMessage = await getOption('upgradeMessage', true)
-
     await setOption('version', version)
-
-    const current = await getOption('version')
-
     if (!previous) {
       await Driver.clearCache()
-
-      if (current) {
-        open(
-          'https://www.wappalyzer.com/installed/?utm_source=installed&utm_medium=extension&utm_campaign=wappalyzer'
-        )
-      }
-    } else if (version !== previous && upgradeMessage) {
-      open(
-        `https://www.wappalyzer.com/upgraded/?utm_source=upgraded&utm_medium=extension&utm_campaign=wappalyzer`,
-        false
-      )
     }
 
     initDone()
@@ -207,14 +191,14 @@ const Driver = {
       js
         .map(({ name, chain, value }) => {
           const technology = technologies.find(
-            ({ name: _name }) => name === _name
+            ({ name: _name }) => name === _name,
           )
 
           return technology
             ? analyzeManyToMany(technology, 'js', { [chain]: [value] })
             : []
         })
-        .flat()
+        .flat(),
     )
   },
 
@@ -234,10 +218,10 @@ const Driver = {
         .map(
           (
             { name, selector, exists, text, property, attribute, value },
-            index
+            index,
           ) => {
             const technology = technologies.find(
-              ({ name: _name }) => name === _name
+              ({ name: _name }) => name === _name,
             )
 
             if (!technology) {
@@ -262,7 +246,7 @@ const Driver = {
                 `dom.properties.${property}`,
                 {
                   [selector]: [value],
-                }
+                },
               )
             }
 
@@ -272,12 +256,14 @@ const Driver = {
                 `dom.attributes.${attribute}`,
                 {
                   [selector]: [value],
-                }
+                },
               )
             }
-          }
+
+            /* eslint array-callback-return: 0 */
+          },
         )
-        .flat()
+        .flat(),
     )
   },
 
@@ -356,11 +342,11 @@ const Driver = {
                   new Error(
                     `${
                       chrome.runtime.lastError.message
-                    }: Driver.${func}(${JSON.stringify(args)})`
-                  )
+                    }: Driver.${func}(${JSON.stringify(args)})`,
+                  ),
                 )
             : resolve(response)
-        }
+        },
       )
     })
   },
@@ -391,7 +377,7 @@ const Driver = {
             headers[name] = headers[name] || []
 
             headers[name].push(
-              (header.value || header.binaryValue || '').toString()
+              (header.value || header.binaryValue || '').toString(),
             )
           })
 
@@ -476,7 +462,7 @@ const Driver = {
 
           Driver.onDetect(
             request.originUrl || request.initiator,
-            analyze({ xhr: hostname })
+            analyze({ xhr: hostname }),
           ).catch(Driver.error)
         }
       }, 1000)
@@ -499,7 +485,7 @@ const Driver = {
           url,
         })
       ).forEach(
-        ({ name, value }) => (items.cookies[name.toLowerCase()] = [value])
+        ({ name, value }) => (items.cookies[name.toLowerCase()] = [value]),
       )
 
       // Change Google Analytics 4 cookie from _ga_XXXXXXXXXX to _ga_*
@@ -517,7 +503,7 @@ const Driver = {
         url,
         analyze({ url, ...items }, technologies),
         language,
-        true
+        true,
       )
     } catch (error) {
       Driver.error(error)
@@ -556,7 +542,7 @@ const Driver = {
     detections = [],
     language,
     incrementHits = false,
-    analyzeRequires = true
+    analyzeRequires = true,
   ) {
     if (!url || !detections.length) {
       return
@@ -589,7 +575,7 @@ const Driver = {
             version,
           },
           index,
-          detections
+          detections,
         ) =>
           detections.findIndex(
             ({
@@ -602,13 +588,13 @@ const Driver = {
               version === _version &&
               confidence === _confidence &&
               value === _value &&
-              (!regex || regex.toString() === _regex.toString())
-          ) === index
+              (!regex || regex.toString() === _regex.toString()),
+          ) === index,
       )
       .map((detection) => {
         if (
           detections.find(
-            ({ technology: { slug } }) => slug === detection.technology.slug
+            ({ technology: { slug } }) => slug === detection.technology.slug,
           )
         ) {
           detection.lastUrl = url
@@ -620,7 +606,7 @@ const Driver = {
     // Track if technology was identified on website's root path
     detections.forEach(({ technology: { name } }) => {
       const detection = cache.detections.find(
-        ({ technology: { name: _name } }) => name === _name
+        ({ technology: { name: _name } }) => name === _name,
       )
 
       detection.rootPath = detection.rootPath || pathname === '/'
@@ -631,12 +617,12 @@ const Driver = {
     // Look for technologies that require other technologies to be present on the page
     const requires = [
       ...Wappalyzer.requires.filter(({ name }) =>
-        resolved.some(({ name: _name }) => _name === name)
+        resolved.some(({ name: _name }) => _name === name),
       ),
       ...Wappalyzer.categoryRequires.filter(({ categoryId }) =>
         resolved.some(({ categories }) =>
-          categories.some(({ id }) => id === categoryId)
-        )
+          categories.some(({ id }) => id === categoryId),
+        ),
       ),
     ]
 
@@ -648,8 +634,6 @@ const Driver = {
 
     await Driver.setIcon(url, resolved)
 
-    await Driver.ping()
-
     cache.hits += incrementHits ? 1 : 0
     cache.language = cache.language || language
 
@@ -658,7 +642,7 @@ const Driver = {
       .sort((a, b) =>
         Driver.cache.hostnames[a].dateTime > Driver.cache.hostnames[b].dateTime
           ? -1
-          : 1
+          : 1,
       )
       .reduce((hostnames, hostname) => {
         const cache = Driver.cache.hostnames[hostname]
@@ -699,12 +683,12 @@ const Driver = {
                   version,
                   rootPath,
                   lastUrl,
-                })
+                }),
               ),
           },
         }),
-        {}
-      )
+        {},
+      ),
     )
 
     Driver.log({ hostname, technologies: resolved })
@@ -729,14 +713,14 @@ const Driver = {
     const _technologies = technologies.filter(
       ({ slug, lastUrl }) =>
         slug !== 'cart-functionality' &&
-        (showCached || isSimilarUrl(url, lastUrl))
+        (showCached || isSimilarUrl(url, lastUrl)),
     )
 
     if (dynamicIcon) {
       const pinnedCategory = parseInt(await getOption('pinnedCategory'), 10)
 
       const pinned = _technologies.find(({ categories }) =>
-        categories.some(({ id }) => id === pinnedCategory)
+        categories.some(({ id }) => id === pinnedCategory),
       )
 
       ;({ icon } = pinned || _technologies[0] || { icon })
@@ -765,7 +749,7 @@ const Driver = {
               ? _technologies.length.toString()
               : '',
         },
-        () => {}
+        () => {},
       )
 
       chrome.action.setIcon(
@@ -776,10 +760,10 @@ const Driver = {
               /\.svg$/i.test(icon)
                 ? `converted/${icon.replace(/\.svg$/, '.png')}`
                 : icon
-            }`
+            }`,
           ),
         },
-        () => {}
+        () => {},
       )
     })
   },
@@ -814,7 +798,7 @@ const Driver = {
     const cache = Driver.cache.hostnames?.[hostname]
 
     const resolved = (cache ? resolve(cache.detections) : []).filter(
-      ({ lastUrl }) => showCached || isSimilarUrl(url, lastUrl)
+      ({ lastUrl }) => showCached || isSimilarUrl(url, lastUrl),
     )
 
     await Driver.setIcon(url, resolved)
@@ -844,7 +828,7 @@ const Driver = {
         // eslint-disable-next-line no-async-promise-executor
         new Promise(async (resolve) => {
           const response = await fetch(
-            `http${secure ? 's' : ''}://${hostname}/robots.txt`
+            `http${secure ? 's' : ''}://${hostname}/robots.txt`,
           )
 
           if (!response.ok) {
@@ -870,7 +854,7 @@ const Driver = {
               }
 
               return disallows
-            }, [])
+            }, []),
           )
         }),
         new Promise((resolve) => setTimeout(() => resolve(''), 5000)),
@@ -883,7 +867,7 @@ const Driver = {
             ...cache,
             [hostname]: Driver.cache.robots[hostname],
           }),
-          {}
+          {},
         )
 
       await setOption('robots', Driver.cache.robots)
@@ -907,7 +891,7 @@ const Driver = {
 
     const robots = await Driver.getRobots(
       url.hostname,
-      url.protocol === 'https:'
+      url.protocol === 'https:',
     )
 
     if (robots.some((disallowed) => url.pathname.indexOf(disallowed) === 0)) {
@@ -925,83 +909,6 @@ const Driver = {
 
     await setOption('hostnames', {})
   },
-
-  /**
-   * Anonymously send identified technologies to wappalyzer.com
-   * This function can be disabled in the extension settings
-   */
-  async ping() {
-    const tracking = await getOption('tracking', true)
-    const termsAccepted =
-      agent === 'chrome' || (await getOption('termsAccepted', false))
-
-    if (tracking && termsAccepted) {
-      const urls = Object.keys(Driver.cache.hostnames).reduce(
-        (urls, hostname) => {
-          if (Object.keys(urls).length >= 25) {
-            return urls
-          }
-
-          // eslint-disable-next-line standard/computed-property-even-spacing
-          const { language, detections, hits, https } =
-            Driver.cache.hostnames[hostname]
-
-          const url = `http${https ? 's' : ''}://${hostname}`
-
-          if (!hostnameIgnoreList.test(hostname) && hits) {
-            urls[url] = urls[url] || {
-              technologies: resolve(detections).reduce(
-                (technologies, { name, confidence, version, rootPath }) => {
-                  if (confidence === 100) {
-                    technologies[name] = {
-                      version,
-                      hits,
-                      rootPath,
-                    }
-                  }
-
-                  return technologies
-                },
-                {}
-              ),
-              meta: {
-                language,
-              },
-            }
-          }
-
-          return urls
-        },
-        {}
-      )
-
-      const count = Object.keys(urls).length
-
-      const lastPing = await getOption('lastPing', Date.now())
-
-      if (
-        count &&
-        ((count >= 25 && lastPing < Date.now() - 1000 * 60 * 60) ||
-          (count >= 5 && lastPing < Date.now() - expiry))
-      ) {
-        await setOption('lastPing', Date.now())
-
-        try {
-          await Driver.post('https://ping.wappalyzer.com/v2/', {
-            version: chrome.runtime.getManifest().version,
-            urls,
-          })
-        } catch (error) {
-          // eslint-disable-next-line no-console
-          console.error(error)
-        }
-
-        Object.keys(Driver.cache.hostnames).forEach((hostname) => {
-          Driver.cache.hostnames[hostname].hits = 0
-        })
-      }
-    }
-  },
 }
 
 chrome.action.setBadgeBackgroundColor({ color: '#6B39BD' }, () => {})
@@ -1009,7 +916,7 @@ chrome.action.setBadgeBackgroundColor({ color: '#6B39BD' }, () => {})
 chrome.webRequest.onCompleted.addListener(
   Driver.onWebRequestComplete,
   { urls: ['http://*/*', 'https://*/*'], types: ['main_frame'] },
-  ['responseHeaders']
+  ['responseHeaders'],
 )
 
 chrome.webRequest.onCompleted.addListener(Driver.onScriptRequestComplete, {
@@ -1035,7 +942,7 @@ chrome.tabs.onUpdated.addListener(async (id, { status, url }) => {
     const cache = Driver.cache?.hostnames?.[hostname]
 
     const resolved = (cache ? resolve(cache.detections) : []).filter(
-      ({ lastUrl }) => showCached || isSimilarUrl(url, lastUrl)
+      ({ lastUrl }) => showCached || isSimilarUrl(url, lastUrl),
     )
 
     await Driver.setIcon(url, resolved)

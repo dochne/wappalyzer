@@ -1,4 +1,4 @@
-[![Validate](https://github.com/wappalyzer/wappalyzer/actions/workflows/validate.yml/badge.svg)](https://github.com/wappalyzer/wappalyzer/actions/workflows/validate.yml)
+[![Validate](https://github.com/HTTPArchive/wappalyzer/actions/workflows/validate.yml/badge.svg)](https://github.com/HTTPArchive/wappalyzer/actions/workflows/validate.yml)
 [![Github Sponsor](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&link=https://github.com/sponsors/AliasIO)](https://github.com/sponsors/AliasIO)
 
 <a href="https://www.wappalyzer.com/?utm_source=readme&utm_medium=github&utm_campaign=wappalyzer"><img src="https://www.wappalyzer.com/images/logo/icon_192.png" height="72" alt="Wappalyzer" align="left" /></a>
@@ -13,12 +13,11 @@
 
 - [Git](https://git-scm.com)
 - [Node.js](https://nodejs.org) version 14 or higher
-- [Yarn](https://yarnpkg.com)
 
 ## Quick start
 
 ```sh
-git clone https://github.com/wappalyzer/wappalyzer.git
+git clone https://github.com/HTTPArchive/wappalyzer.git
 cd wappalyzer
 yarn install
 ```
@@ -27,24 +26,18 @@ yarn install
 
 ### Chrome extension
 
-- Go to `about:extensions`
+- Go to `chrome:extensions`
 - Enable 'Developer mode'
 - Click 'Load unpacked'
 - Select `src`
-
-### Firefox extension
-
-- Go to `about:debugging#/runtime/this-firefox`
-- Click 'Load Temporary Add-on'
-- Select `src/manifest.json`
 
 ## Specification
 
 A long list of [regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) is used to identify technologies on web pages. Wappalyzer inspects HTML code, as well as JavaScript variables, response headers and more.
 
-Patterns (regular expressions) are kept in [`src/technologies/`](https://github.com/wappalyzer/wappalyzer/blob/master/src/technologies). The following is an example of an application fingerprint.
+Patterns (regular expressions) are kept in [`src/technologies/`](https://github.com/HTTPArchive/wappalyzer/tree/main/src/technologies). The following is an example of an application fingerprint.
 
-#### Example
+### Example
 
 ```json
 "Example": {
@@ -104,7 +97,7 @@ Patterns (regular expressions) are kept in [`src/technologies/`](https://github.
 
 ## JSON fields
 
-Find the JSON schema at [`schema.json`](https://github.com/wappalyzer/wappalyzer/blob/master/schema.json).
+Find the JSON schema at [`schema.json`](https://github.com/HTTPArchive/wappalyzer/blob/main/schema.json).
 
 ### Required properties
 

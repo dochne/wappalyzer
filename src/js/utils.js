@@ -2,18 +2,8 @@
 /* eslint-env browser */
 /* globals chrome */
 
-// Manifest v2 polyfill
-if (chrome.runtime.getManifest().manifest_version === 2) {
-  chrome.action = chrome.browserAction
-}
-
-// eslint-disable-next-line no-unused-vars
 const Utils = {
-  agent: chrome.runtime.getURL('/').startsWith('moz-')
-    ? 'firefox'
-    : chrome.runtime.getURL('/').startsWith('safari-')
-    ? 'safari'
-    : 'chrome',
+  agent: 'chrome',
 
   /**
    * Use promises instead of callbacks
@@ -53,7 +43,7 @@ const Utils = {
         const managed = await Utils.promisify(
           chrome.storage.managed,
           'get',
-          name
+          name,
         )
 
         if (managed[name] !== undefined) {
@@ -97,7 +87,7 @@ const Utils = {
    */
   i18n() {
     Array.from(document.querySelectorAll('[data-i18n]')).forEach(
-      (node) => (node.innerHTML = chrome.i18n.getMessage(node.dataset.i18n))
+      (node) => (node.innerHTML = chrome.i18n.getMessage(node.dataset.i18n)),
     )
   },
 
@@ -113,7 +103,7 @@ const Utils = {
           chrome.runtime.lastError
             ? reject(chrome.runtime.lastError)
             : resolve(response)
-        }
+        },
       )
     })
   },

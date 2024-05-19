@@ -2,7 +2,7 @@ const fs = require('fs')
 const Zip = require('adm-zip')
 
 const currentVersion = JSON.parse(
-  fs.readFileSync('./src/manifest-v3.json')
+  fs.readFileSync('./src/manifest.json')
 ).version
 
 const version = process.argv[2]
@@ -16,7 +16,7 @@ if (!version) {
   process.exit(1)
 }
 
-;['./src/manifest-v2.json', './src/manifest-v3.json'].forEach((file) => {
+;['./src/manifest.json'].forEach((file) => {
   const json = JSON.parse(fs.readFileSync(file))
 
   json.version = version
@@ -24,22 +24,8 @@ if (!version) {
   fs.writeFileSync(file, JSON.stringify(json, null, 2))
 })
 
-fs.copyFileSync(`./src/manifest.json`, './src/manifest.bak.json')
-
-fs.copyFileSync(`./src/manifest-v2.json`, './src/manifest.json')
-
-let zip = new Zip()
+const zip = new Zip()
 
 zip.addLocalFolder('./src', '')
 
-zip.writeZip('./build/webextension-v2.zip')
-
-fs.copyFileSync(`./src/manifest-v3.json`, './src/manifest.json')
-
-zip = new Zip()
-
-zip.addLocalFolder('./src', '')
-
-zip.writeZip('./build/webextension-v3.zip')
-
-fs.copyFileSync(`./src/manifest.bak.json`, './src/manifest.json')
+zip.writeZip('./build/webextension.zip')
