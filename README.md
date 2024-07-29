@@ -3,6 +3,10 @@
 
 <a href="https://www.wappalyzer.com/?utm_source=readme&utm_medium=github&utm_campaign=wappalyzer"><img src="https://www.wappalyzer.com/images/logo/icon_192.png" height="72" alt="Wappalyzer" align="left" /></a>
 
+# IMPORTANT
+
+This is a fork from when this repo went private - there's a project that's attempting to continue [here](https://github.com/enthec/webappanalyzer) that you probably want instead
+
 # Wappalyzer
 
 <br>
