@@ -1,11 +1,11 @@
+# IMPORTANT
+
+This is a fork from when this repo went private - there's a project that's attempting to continue [here](https://github.com/enthec/webappanalyzer) that you probably want instead
+
 [![Validate](https://github.com/wappalyzer/wappalyzer/actions/workflows/validate.yml/badge.svg)](https://github.com/wappalyzer/wappalyzer/actions/workflows/validate.yml)
 [![Github Sponsor](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&link=https://github.com/sponsors/AliasIO)](https://github.com/sponsors/AliasIO)
 
 <a href="https://www.wappalyzer.com/?utm_source=readme&utm_medium=github&utm_campaign=wappalyzer"><img src="https://www.wappalyzer.com/images/logo/icon_192.png" height="72" alt="Wappalyzer" align="left" /></a>
-
-# IMPORTANT
-
-This is a fork from when this repo went private - there's a project that's attempting to continue [here](https://github.com/enthec/webappanalyzer) that you probably want instead
 
 # Wappalyzer
 
